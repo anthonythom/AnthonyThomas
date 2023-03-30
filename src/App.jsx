@@ -12,7 +12,7 @@ scroll-snap-type:  y mandatory;
 scroll-behavior:  smooth;
 overflow-y: auto;
 scrollbar-width: none;
-color: #fefcff;
+color: #000000;
 background-color: #fefcff;
 
 &::-webkit-scrollbar{

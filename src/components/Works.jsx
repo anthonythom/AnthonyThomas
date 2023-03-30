@@ -29,6 +29,7 @@ margin-left: 3vh;
 margin-top: 3vh;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 150px;
+ color: #0bb0de;
 
   
   @media only screen and (max-width: 768px) {
@@ -48,7 +49,7 @@ margin-left: 5vh;
   align-items: center;
  
   flex-direction:column;
-  background-color: #d5d3db;
+  background-color: #caedff;
   border-radius: 10px;
   
 
@@ -61,18 +62,18 @@ const Image = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #e1f505;
+  color: #0bb0de;
 `;
 
 const Desc = styled.p`
   font-size: 24px;
-  color: lightgray;
+  color: #26bed8;
  text-align: center;
 
 `;
 
 const Button = styled.button`
-  background-color: #f4eff3;
+  background-color: #0bb0de;
   color: white;
   font-weight: 500;
   width: 120px;
@@ -90,7 +91,7 @@ const Works = () => {
         <Div>
         <div>
           <WhatWeDo>
-            <Image src="public/img/project1.png" />
+            <Image src="public\img\project1.png" />
             <Subtitle>Zumbilandia</Subtitle>
             <Desc>
               jogo de escolhas feito com javascripoigftoeaghioahgpasgjaogásg´sagjájjgo´sajgajgáojga´gsa´djsa´dja´sdja
@@ -146,7 +147,7 @@ de viabilidade de produto de derivagem (spin-off) da série de televisão "Game 
                e API da Nasa.
             </Desc>
 
-            <div>
+            <div className="btn">
               <a href="https://github.com/anthonythom/projeto-APOD">
                 <Button>
                   Code

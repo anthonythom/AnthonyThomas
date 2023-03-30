@@ -29,6 +29,7 @@ const Left = styled.div`
 const Title = styled.h1`
 font-size: 50px;
   font-weight: 200px;
+  
 `;
 
 const Form = styled.form`
@@ -52,12 +53,13 @@ const TextArea = styled.textarea`
   padding: 20px;
   border: none;
   border-radius: 5px;
+  
   background-color: #ebebeb;
 `;
 
 const Button = styled.button`
-  background-color: #49d21f;
-  color: white;
+  background-color: #0bb0de;
+  color: #ffffff;
   border: none;
   font-weight: bold;
   cursor: pointer;

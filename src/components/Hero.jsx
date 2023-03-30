@@ -43,9 +43,13 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 120px;
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@1&family=Merriweather:ital,wght@1,900&family=Playfair+Display+SC:wght@700&display=swap');
+ 
+font-size: 125px;
+font-family: 'Carter One', cursive;
+font-family: 'Changa One', cursive;
+font-family: 'Merriweather', serif;
 font-family: 'Playfair Display SC', serif;
-
 
 
   @media only screen and (max-width: 768px) {
@@ -65,13 +69,17 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #00ff0d;
+  color: #0bb0de;
   text-align: justify;
 `;
 
 const Desc = styled.p`
   font-size: 24px;
-  color: lightgray;
+  color: #000000;
+  font-family: 'Carter One', cursive;
+font-family: 'Changa One', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display SC', serif;
   @media only screen and (max-width: 768px) {
     padding: 20px;
     text-align: center;
@@ -79,7 +87,7 @@ const Desc = styled.p`
 `;
 
 const Button = styled.button`
-  background-color:#28b42f;
+  background-color:#0bb0de;
   color: white;
   font-weight: 500;
   width: 100px;
@@ -146,7 +154,7 @@ const Hero = () => {
               <directionalLight position={[3, 2, 1]} />
               <Sphere args={[1, 100, 200]} scale={2.4}>
                 <MeshDistortMaterial
-                  color="#177c21"
+                  color="#0bb0de"
                   attach="material"
                   distort={0.5}
                   speed={2}
@@ -154,7 +162,7 @@ const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <Img src="./img/rick-and-morty-rick-unscreen.gif"/ >
+          {/* <Img src="./img/rick-and-morty-rick-unscreen.gif"/ > */}
         </Right>
       </Container>
     </Section>

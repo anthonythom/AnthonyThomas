@@ -56,33 +56,34 @@ const Icon = styled.img`
 
 `;
 
-const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-  background-color: #24c72c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;
+// const Button = styled.button`
+//   width: 150px;
+//   padding: 10px;
+//   background-color: #24c0d5;
+//   color: white;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+// `;
 
 const Navbar = () => {
   return (
     <Section>
       <Container>
         <Links>
-          <Logo src="./img/eu.png" />
+          <Logo src="./img/logo.png" />
           <List>
             <ListItem>Início</ListItem>
+          
             <ListItem>Sobre</ListItem>
             <ListItem>Trabalhos</ListItem>
             <ListItem>Contato</ListItem>
           </List>
         </Links>
-        <Icons>
+        {/* <Icons>
           <Icon src="./img/search.png" />
           <Button>Contrate agora</Button>
-        </Icons>
+        </Icons> */}
       </Container>
     </Section>
   );

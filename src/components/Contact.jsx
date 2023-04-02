@@ -12,6 +12,7 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  margin-top: 200px;
   justify-content: space-between;
   gap: 50px;
 `;
@@ -118,7 +119,7 @@ const Contact = () => {
           </Form>
         </Left>
         <Right>
-          {/* <Map /> */}
+      
         </Right>
       </Container>
     </Section>

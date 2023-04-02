@@ -43,14 +43,11 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@1&family=Merriweather:ital,wght@1,900&family=Playfair+Display+SC:wght@700&display=swap');
- 
-font-size: 125px;
-font-family: 'Carter One', cursive;
-font-family: 'Changa One', cursive;
-font-family: 'Merriweather', serif;
-font-family: 'Playfair Display SC', serif;
 
+
+font-size: 125px;
+
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -150,14 +147,14 @@ const Hero = () => {
           <Canvas>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
-              <ambientLight intensity={1} />
-              <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
+              <ambientLight intensity={0.20} />
+              <directionalLight position={[6, 4, 5]} />
+              <Sphere args={[0.9, 100, 100]} scale={2.2}>
                 <MeshDistortMaterial
                   color="#0bb0de"
                   attach="material"
                   distort={0.5}
-                  speed={2}
+                  speed={2.5}
                 />
               </Sphere>
             </Suspense>

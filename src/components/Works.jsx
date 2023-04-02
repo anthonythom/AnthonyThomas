@@ -25,10 +25,10 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-margin-left: 3vh;
-margin-top: 3vh;
+margin-left: 5vh;
+margin-top: 2vh;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 150px;
+  font-size: 50px;
  color: #0bb0de;
 
   
@@ -44,6 +44,7 @@ margin-bottom: 5vh;
 `;
 
 const WhatWeDo = styled.div`
+margin-top: 3vh;
 margin-left: 5vh;
   display: flex;
   align-items: center;
@@ -54,7 +55,11 @@ margin-left: 5vh;
   
 
 `;
+ const Left = styled.div`
 
+
+
+ `
 const Image = styled.img`
 
   height: 200px;
@@ -89,9 +94,11 @@ const Works = () => {
         
         <Title>PORTFOLIO</Title>
         <Div>
-        <div>
+        <div> 
           <WhatWeDo>
             <Image src="public\img\project1.png" />
+
+            
             <Subtitle>Zumbilandia</Subtitle>
             <Desc>
               jogo de escolhas feito com javascripoigftoeaghioahgpasgjaogásg´sagjájjgo´sajgajgáojga´gsa´djsa´dja´sdja
@@ -191,10 +198,10 @@ de viabilidade de produto de derivagem (spin-off) da série de televisão "Game 
         <div>
 
           <WhatWeDo>
-            <Image src="public/img/project1.png" />
-            <Subtitle>Zumbilandia</Subtitle>
+            <Image src="public\img\tatuaria.png" />
+            <Subtitle>Tatuaria</Subtitle>
             <Desc>
-              jogo de escolhas feito com javascrip
+            A proposta deste projeto é: Um CRUD completo com intregração de front e back end. Nesta aplicação é possível registrar, listar, atualizar e deletar
             </Desc>
 
             <div>

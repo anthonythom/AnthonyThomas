@@ -138,7 +138,7 @@ const Works = () => {
 
           <div className="1">
             <WhatWeDo>
-              <Image src="public\img\project1.png" />
+              <Image src="./img/project1.png" />
 
 
               <Subtitle>Zumbilandia</Subtitle>
@@ -177,7 +177,7 @@ const Works = () => {
 
           <div className="2">
             <WhatWeDo>
-              <Image src="public/img/projeto 2.png" />
+              <Image src="./img/projeto 2.png" />
               <Subtitle>Game of Spin-Off</Subtitle>
               <Desc>
                 feito em 2022

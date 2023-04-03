@@ -202,7 +202,7 @@ const Works = () => {
 
           <div className="3">
             <WhatWeDo>
-              <Image src="public/img/projeto 3.png" />
+              <Image src="./img/projeto 3.png" />
               <Subtitle>Astronomy Picture of The Day</Subtitle>
               <Desc>
                 feito em 2022
@@ -225,7 +225,7 @@ const Works = () => {
 
           <div className="4">
             <WhatWeDo>
-              <Image src="public\img\projeto 4.png" />
+              <Image src="./img/projeto 4.png" />
               <Subtitle>FrontEnders</Subtitle>
               <Desc>
                 feito em 2022
@@ -258,10 +258,10 @@ const Works = () => {
           <div className="5">
 
             <WhatWeDo>
-              <Image src="public\img\tatuaria.png" />
+              <Image src="./img/tatuaria.png" />
               <Subtitle>Tatuaria</Subtitle>
               <Desc>
-                A proposta deste projeto é: Um CRUD completo com intregração de front e back end. Nesta aplicação é possível registrar, listar, atualizar e deletar
+              feito em 2022
               </Desc>
 
               <div>
@@ -283,10 +283,10 @@ const Works = () => {
           <div className="6">
 
             <WhatWeDo>
-              <Image src="public/img/project1.png" />
+              <Image src="./img/project1.png" />
               <Subtitle>Zumbilandia</Subtitle>
               <Desc>
-                jogo de escolhas feito com javascrip
+              feito em 2022
               </Desc>
 
               <div>
@@ -308,10 +308,10 @@ const Works = () => {
           <div className="7">
 
             <WhatWeDo>
-              <Image src="public/img/project1.png" />
+              <Image src="./img/project1.png" />
               <Subtitle>Zumbilandia</Subtitle>
               <Desc>
-                jogo de escolhas feito com javascrip
+              feito em 2022
               </Desc>
 
               <div>
@@ -333,10 +333,10 @@ const Works = () => {
           <div className="8">
 
             <WhatWeDo>
-              <Image src="public/img/project1.png" />
+              <Image src="./img/project1.png" />
               <Subtitle>Zumbilandia</Subtitle>
               <Desc>
-                jogo de escolhas feito com javascrip
+              feito em 2022
               </Desc>
 
               <div>

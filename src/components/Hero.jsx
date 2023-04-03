@@ -47,7 +47,7 @@ const Title = styled.h1`
 
 font-size: 125px;
 
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: 'Open Sans', sans-serif;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -73,9 +73,7 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: #000000;
-  font-family: 'Carter One', cursive;
-font-family: 'Changa One', cursive;
-font-family: 'Merriweather', serif;
+
 font-family: 'Playfair Display SC', serif;
   @media only screen and (max-width: 768px) {
     padding: 20px;

@@ -4,16 +4,17 @@ import Who from "./components/Who"
 import Works from "./components/Works"
 import Contact from "./components/Contact"
 import Navbar from "./components/Navbar"
-
+import Footer from "./components/Footer"
 
 const Container = styled.div`
 height: 100vh;
-scroll-snap-type:  y mandatory;
-scroll-behavior:  smooth;
+ scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+
 overflow-y: auto;
 scrollbar-width: none;
 color: #000000;
-background-color: #fefcff;
+background-color: #ffffff;
 
 &::-webkit-scrollbar{
   display: none;
@@ -29,9 +30,8 @@ function App() {
       <Hero />
       <Who />
       <Works />
-    
       <Contact />
-
+      <Footer />
     </Container>
   )
 }

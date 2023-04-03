@@ -52,12 +52,22 @@ const ListItem = styled.li`
 
 const Button = styled.button`
   width: 150px;
-  padding: 10px;
+ 
   background-color: #24c0d5;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
+
+
+  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+
+
+
+  font-weight: bold;
+
+
+  padding: 20px;
 `;
 
 const Navbar = () => {
@@ -67,16 +77,20 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/logo.png" />
           <List>
+           
             <ListItem>Início</ListItem>
+          
             <ListItem>Sobre</ListItem>
             <ListItem>Trabalhos</ListItem>
             <ListItem>Contato</ListItem>
           </List>
         </Links>
      
-      
-          <Button>Contrate agora</Button>
-    
+      <a href="mailto:anthonythomascontato@gmail.com">
+          <Button>
+          Contrate agora!
+          </Button>
+    </a>
       </Container>
     </Section>
   );

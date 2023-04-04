@@ -61,7 +61,7 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
   font-size: 24px;
-  color: lightgray;
+  color: #000000;
 `;
 
 const Button = styled.button`
@@ -100,7 +100,7 @@ const Who = () => {
 
             Me motivo a crescer a cada oportunidade para colecionar cada vez mais experiências.
           </Desc>
-          <a href="public/CV_AnthonyThomas.pdf" download>
+          <a href="./CV_AnthonyThomas.pdf" download>
           <Button>
             Baixar CV
           </Button></a>

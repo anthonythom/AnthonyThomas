@@ -106,7 +106,7 @@ const Button = styled.button`
   background-color: #0bb0de;
   color: white;
   font-weight: 500;
-  width: 60px;
+
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -115,11 +115,11 @@ const Button = styled.button`
 
 const DivB = styled.div`
 
-display: flex;
-justify-content: space-around;
-background-color: #c11212;
-margin-right: 20px;
 
+
+
+
+margin-bottom: 20px;
 
 
 
@@ -149,25 +149,18 @@ const Works = () => {
               <DivB>
 
                 <div>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width={20} />
-                  <a href="public/CV_AnthonyThomas.pdf" >
+
+                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
                     <Button>
 
 
 
-                      Codigo
+                      Ver mais
                     </Button>
                   </a>
                 </div>
 
-                <div>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width={20} />
-                  <a href="public/CV_AnthonyThomas.pdf" >
-                    <Button>
-                      Live
-                    </Button>
-                  </a>
-                </div>
+
               </DivB>
 
             </WhatWeDo>
@@ -184,19 +177,17 @@ const Works = () => {
 
 
               </Desc>
+              <DivB>
+                <div>
+                  <a href="https://github.com/hugolegramandi/SpinOff_GoT" target="_blank">
+                    <Button>
+                      Ver mais
+                    </Button>
+                  </a>
 
-              <div>
-                <a href="https://github.com/hugolegramandi/SpinOff_GoT">
-                  <Button>
-                    Code
-                  </Button>
-                </a>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Live
-                  </Button>
-                </a>
-              </div>
+                </div>
+
+              </DivB>
             </WhatWeDo>
           </div>
 
@@ -208,18 +199,22 @@ const Works = () => {
                 feito em 2022
               </Desc>
 
-              <div className="btn">
-                <a href="https://github.com/anthonythom/projeto-APOD">
-                  <Button>
-                    Code
-                  </Button>
-                </a>
-                <a href="https://anthonythom.github.io/projeto-APOD/">
-                  <Button>
-                    Live
-                  </Button>
-                </a>
-              </div>
+              <DivB>
+
+                <div>
+
+                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+                    <Button>
+
+
+
+                      Ver mais
+                    </Button>
+                  </a>
+                </div>
+
+
+              </DivB>
             </WhatWeDo>
           </div>
 
@@ -231,18 +226,22 @@ const Works = () => {
                 feito em 2022
               </Desc>
 
-              <div>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Code
-                  </Button>
-                </a>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Live
-                  </Button>
-                </a>
-              </div>
+              <DivB>
+
+                <div>
+
+                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+                    <Button>
+
+
+
+                      Ver mais
+                    </Button>
+                  </a>
+                </div>
+
+
+              </DivB>
             </WhatWeDo>
           </div>
 
@@ -261,21 +260,25 @@ const Works = () => {
               <Image src="./img/tatuaria.png" />
               <Subtitle>Tatuaria</Subtitle>
               <Desc>
-              feito em 2022
+                feito em 2022
               </Desc>
 
-              <div>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Code
-                  </Button>
-                </a>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Live
-                  </Button>
-                </a>
-              </div>
+              <DivB>
+
+                <div>
+
+                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+                    <Button>
+
+
+
+                      Ver mais
+                    </Button>
+                  </a>
+                </div>
+
+
+              </DivB>
             </WhatWeDo>
           </div>
 
@@ -286,21 +289,25 @@ const Works = () => {
               <Image src="./img/project1.png" />
               <Subtitle>Zumbilandia</Subtitle>
               <Desc>
-              feito em 2022
+                feito em 2022
               </Desc>
 
-              <div>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Code
-                  </Button>
-                </a>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Live
-                  </Button>
-                </a>
-              </div>
+              <DivB>
+
+<div>
+ 
+  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+    <Button>
+
+
+
+     Ver mais
+    </Button>
+  </a>
+</div>
+
+
+</DivB>
             </WhatWeDo>
           </div>
 
@@ -311,21 +318,25 @@ const Works = () => {
               <Image src="./img/project1.png" />
               <Subtitle>Zumbilandia</Subtitle>
               <Desc>
-              feito em 2022
+                feito em 2022
               </Desc>
 
-              <div>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Code
-                  </Button>
-                </a>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Live
-                  </Button>
-                </a>
-              </div>
+              <DivB>
+
+<div>
+ 
+  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+    <Button>
+
+
+
+     Ver mais
+    </Button>
+  </a>
+</div>
+
+
+</DivB>
             </WhatWeDo>
           </div>
 
@@ -336,21 +347,25 @@ const Works = () => {
               <Image src="./img/project1.png" />
               <Subtitle>Zumbilandia</Subtitle>
               <Desc>
-              feito em 2022
+                feito em 2022
               </Desc>
 
-              <div>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Code
-                  </Button>
-                </a>
-                <a href="public/CV_AnthonyThomas.pdf" download>
-                  <Button>
-                    Live
-                  </Button>
-                </a>
-              </div>
+              <DivB>
+
+<div>
+ 
+  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+    <Button>
+
+
+
+     Ver mais
+    </Button>
+  </a>
+</div>
+
+
+</DivB>
             </WhatWeDo>
           </div>
 

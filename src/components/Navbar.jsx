@@ -77,10 +77,12 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/logo.png" />
           <List>
-           
+           <a href="https://portfolioanthonythomas.vercel.app">
             <ListItem>Início</ListItem>
-          
+          </a>
+          <a href="src/Pages/Who.jsx">
             <ListItem>Sobre</ListItem>
+            </a>
             <ListItem>Trabalhos</ListItem>
             <ListItem>Contato</ListItem>
           </List>

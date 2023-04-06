@@ -127,7 +127,7 @@ margin-bottom: 20px;
 `;
 const Works = () => {
   return (
-    <Section>
+    <Section id="works" className="header_link">
       <Container>
 
         <Title>PORTFOLIO</Title>

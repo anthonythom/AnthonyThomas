@@ -132,7 +132,7 @@ const Contact = () => {
       );
   };
   return (
-    <Section>
+    <Section id="contact" className="header_link">
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>

@@ -43,14 +43,25 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
 
 
-font-size: 125px;
 
-font-family: 'Open Sans', sans-serif;
+
+font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight: 800;
+    
+    font-family: sans-serif;
+  
+    font-family: 'Source Sans Pro',sans-serif;
+
 
   @media only screen and (max-width: 768px) {
-    text-align: center;
+   
     
   }
 `;
@@ -130,7 +141,7 @@ const Hero = () => {
       <Navbar />
       <Container>
         <Left>
-          <Title>ANTHONY THOMAS</Title>
+          <Title>Olá, eu sou o Anthony Thomas!</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>Desenvolvedor FullStack</Subtitle>

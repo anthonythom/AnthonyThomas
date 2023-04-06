@@ -27,6 +27,9 @@ const Links = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
+  :hover{
+    color: azure;
+  }
 `;
 
 const Logo = styled.img`
@@ -37,6 +40,14 @@ const List = styled.ul`
   display: flex;
   gap: 20px;
   list-style: none;
+  text-decoration: none;
+ 
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+  
+
 
   @media only screen and (max-width: 768px) {
     display: none;
@@ -45,6 +56,18 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   cursor: pointer;
+
+  list-style: none;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+
+  
 `;
 
 
@@ -77,22 +100,27 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/logo.png" />
           <List>
-           <a href="https://portfolioanthonythomas.vercel.app">
-            <ListItem>Início</ListItem>
-          </a>
-          <a href="src/Pages/Who.jsx">
-            <ListItem>Sobre</ListItem>
+            <a href="./">
+              <ListItem>Início</ListItem>
             </a>
-            <ListItem>Trabalhos</ListItem>
-            <ListItem>Contato</ListItem>
+
+            <a href="./#who" className="header_link">
+              <ListItem>Sobre</ListItem>
+            </a>
+            <a href="./#works">
+              <ListItem>Trabalhos</ListItem>
+            </a>
+            <a href="./#contact" className="header_link">
+              <ListItem>Contato</ListItem>
+            </a>
           </List>
         </Links>
-     
-      <a href="mailto:anthonythomascontato@gmail.com">
+
+        <a href="mailto:anthonythomascontato@gmail.com">
           <Button>
-          Contrate agora!
+            Contrate agora!
           </Button>
-    </a>
+        </a>
       </Container>
     </Section>
   );

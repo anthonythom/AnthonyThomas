@@ -27,11 +27,11 @@ function App() {
   return (
     <Container>
       <Navbar />
-      <Hero id="/"/>
+      <Hero id="/" />
       < Who id="who" />
-      <Works  id="works" />
+      <Works id="works" />
       <Contact id="contact" />
-      <Footer  />
+      <Footer />
     </Container>
   )
 }

@@ -44,7 +44,11 @@ margin-right: 10vh;
 display: flex;
 flex-direction: column;
 
-
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
 
 `;
 
@@ -58,6 +62,12 @@ padding: 2rem 0;
     color: #eee;
     font-size: 1rem;
     text-align: center;
+
+    a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+    }
 `;
 
 
@@ -72,8 +82,9 @@ const Footer = () => {
 
             <h1>Anthony Thomas</h1>
             <h2>
-              Um desenvolvedor Web focado em Frontend, construindo o Frontend<br /> de sites e
+              Um desenvolvedor Web focado em Frontend, construindo o Front-end<br /> de sites e
               aplicativos que levam ao sucesso do produto geral.
+              
             </h2>
           </Left>
 

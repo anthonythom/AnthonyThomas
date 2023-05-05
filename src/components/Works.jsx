@@ -26,11 +26,17 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-margin-left: 5vh;
-margin-top: 10   vh;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 100px;
- color: #0bb0de;
+font-size: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+ 
+    color: #111;
+    font-weight: 800;
+    margin-left: 1rem;
+    font-family: sans-serif;
+  
+    font-family: 'Source Sans Pro',sans-serif;
+
 
   
   @media only screen and (max-width: 768px) {
@@ -65,7 +71,7 @@ margin-left: 3vh;
 margin-right: 5vh;
   display: flex; 
 
-justify-content: space-around;
+
 flex-direction:column;
   align-items: center;
  
@@ -75,6 +81,11 @@ flex-direction:column;
   
   box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
     background: #fff;
+
+    @media only screen and (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 const Left = styled.div`
 
@@ -117,8 +128,6 @@ const DivB = styled.div`
 
 
 
-
-
 margin-bottom: 20px;
 
 
@@ -136,7 +145,7 @@ const Works = () => {
 
 
 
-          <div className="1">
+          {/* <div className="1">
             <WhatWeDo>
               <Image src="./img/project1.png" />
 
@@ -166,7 +175,7 @@ const Works = () => {
             </WhatWeDo>
 
 
-          </div>
+          </div> */}
 
           <div className="2">
             <WhatWeDo>
@@ -203,7 +212,7 @@ const Works = () => {
 
                 <div>
 
-                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+                  <a href="https://anthonythom.github.io/projeto-APOD/" target="_blank">
                     <Button>
 
 
@@ -230,7 +239,7 @@ const Works = () => {
 
                 <div>
 
-                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+                  <a href="https://brunoblanquez.github.io/FrontEnders/index.html" target="_blank">
                     <Button>
 
 
@@ -245,15 +254,8 @@ const Works = () => {
             </WhatWeDo>
           </div>
 
-        </Div1>
 
-
-
-
-        <Div>
-
-
-
+          
           <div className="5">
 
             <WhatWeDo>
@@ -283,60 +285,69 @@ const Works = () => {
           </div>
 
 
-          <div className="6">
+        </Div1>
+
+
+
+
+        <Div>
+
+
+
+
+          {/* <div className="6">
 
             <WhatWeDo>
-              <Image src="./img/project1.png" />
-              <Subtitle>Zumbilandia</Subtitle>
+              <Image src="img\work.png" />
+              <Subtitle>Proximos projetos</Subtitle>
               <Desc>
-                feito em 2022
+                em progresso
               </Desc>
 
               <DivB>
 
-<div>
- 
-  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
-    <Button>
+                <div>
+
+                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+                    <Button>
 
 
 
-     Ver mais
-    </Button>
-  </a>
-</div>
+                      Ver mais
+                    </Button>
+                  </a>
+                </div>
 
 
-</DivB>
+              </DivB>
             </WhatWeDo>
           </div>
 
 
           <div className="7">
-
             <WhatWeDo>
-              <Image src="./img/project1.png" />
-              <Subtitle>Zumbilandia</Subtitle>
+              <Image src="img\work.png" />
+              <Subtitle>Proximos projetos</Subtitle>
               <Desc>
-                feito em 2022
+                em progresso
               </Desc>
 
               <DivB>
 
-<div>
- 
-  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
-    <Button>
+                <div>
+
+                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+                    <Button>
 
 
 
-     Ver mais
-    </Button>
-  </a>
-</div>
+                      Ver mais
+                    </Button>
+                  </a>
+                </div>
 
 
-</DivB>
+              </DivB>
             </WhatWeDo>
           </div>
 
@@ -344,30 +355,29 @@ const Works = () => {
           <div className="8">
 
             <WhatWeDo>
-              <Image src="./img/project1.png" />
-              <Subtitle>Zumbilandia</Subtitle>
+              <Image src="img\work.png" />
+              <Subtitle>Proximos projetos</Subtitle>
               <Desc>
-                feito em 2022
+                em progresso
               </Desc>
 
               <DivB>
+                <div>
 
-<div>
- 
-  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
-    <Button>
-
+                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+                    <Button>
 
 
-     Ver mais
-    </Button>
-  </a>
-</div>
+
+                      Ver mais
+                    </Button>
+                  </a>
+                </div>
 
 
-</DivB>
+              </DivB>
             </WhatWeDo>
-          </div>
+          </div> */}
 
         </Div>
       </Container>

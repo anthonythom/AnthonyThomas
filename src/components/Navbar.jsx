@@ -13,10 +13,12 @@ const Section = styled.div`
 const Container = styled.div`
   width: 1400px;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  
+
+   
   @media only screen and (max-width: 768px) {
     width: 100%;
     padding: 10px;
@@ -41,7 +43,16 @@ const List = styled.ul`
   gap: 20px;
   list-style: none;
   text-decoration: none;
+
+
+  a:visited {
+  color: #000000;
+  text-decoration: none;
+  list-style: none;
+  
+
  
+}
 
     text-transform: uppercase;
     letter-spacing: 1px;

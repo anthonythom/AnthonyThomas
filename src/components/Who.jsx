@@ -27,7 +27,18 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
+  
+  font-size: 3rem;
+    text-transform: uppercase;
+    
+   
+    color: #111;
+    font-weight: 800;
+    
+    font-family: sans-serif;
+  
+    font-family: 'Source Sans Pro',sans-serif;
+
   @media only screen and (max-width: 768px) {
     font-size: 60px;
   }
@@ -85,6 +96,7 @@ const Who = () => {
               <ambientLight intensity={0.7} />
               <directionalLight position={[3, 2, 1]} />
               <Cube />
+            
               <OrbitControls enableZoom={true} autoRotate />
             </Suspense>
           </Canvas>

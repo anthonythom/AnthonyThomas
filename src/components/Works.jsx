@@ -269,7 +269,7 @@ const Works = () => {
 
                 <div>
 
-                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
+                  <a href="https://github.com/anthonythom/M5-Resilia-API" target="_blank">
                     <Button>
 
 

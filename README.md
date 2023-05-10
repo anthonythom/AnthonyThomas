@@ -1,6 +1,6 @@
 #  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/> 
   <h1>Portfolio de Anthony Thomas  </h1>
-  <img src="https://github.com/account](https://avatars.githubusercontent.com/u/95666367?v=4)" width="100" alt="Foto do toninho"/>
+  <img src="https://camo.githubusercontent.com/580bb2e495ddb7fc5b968c1f6a70ba5a66879a33b764b0b688b8e2a0a575c789/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3935343437363138333732303936343137312f3936343931333132393631343130363633342f546f6e692e6a7067" width="40" height="40"/>" width="100" alt="Foto do toninho"/>
 	     
 
 

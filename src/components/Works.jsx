@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
-import Carousel from "./Carousel";
-
+import Carousel from 'react-bootstrap/Carousel';
 
 const Section = styled.div`
   height: 150vh;

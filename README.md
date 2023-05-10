@@ -45,8 +45,6 @@ $ npm start / npm run build
 
 
 	
-<h2>Contribuidores do projeto</h2>
- 🤝 Colaboradores
 
 
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import Carousel from "./Carousel";
 
 
 const Section = styled.div`
@@ -26,13 +27,12 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-font-size: 8rem;
+font-size: 5rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
  
     color: #111;
     font-weight: 800;
-    margin-left: 1rem;
+    margin-left: 5rem;
     font-family: sans-serif;
   
     font-family: 'Source Sans Pro',sans-serif;
@@ -94,8 +94,7 @@ const Left = styled.div`
  `
 const Image = styled.img`
 
-border-radius: 20px;
-  height: 200px;
+
 
 `;
 
@@ -124,16 +123,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const DivB = styled.div`
 
-
-
-margin-bottom: 20px;
-
-
-
-
-`;
 const Works = () => {
   return (
     <Section id="works" className="header_link">
@@ -141,11 +131,18 @@ const Works = () => {
 
         <Title>PORTFOLIO</Title>
 
-        <Div1>
 
 
 
-          {/* <div className="1">
+
+        <Carousel />
+
+
+        {/* <Div1> */}
+
+
+
+        {/* <div className="1">
             <WhatWeDo>
               <Image src="./img/project1.png" />
 
@@ -176,7 +173,7 @@ const Works = () => {
 
 
           </div> */}
-
+        {/* 
           <div className="2">
             <WhatWeDo>
               <Image src="./img/projeto 2.png" />
@@ -285,17 +282,17 @@ const Works = () => {
           </div>
 
 
-        </Div1>
+        </Div1> */}
 
 
 
 
-        <Div>
+        {/* <Div> */}
 
 
 
 
-          {/* <div className="6">
+        {/* <div className="6">
 
             <WhatWeDo>
               <Image src="img\work.png" />
@@ -379,7 +376,7 @@ const Works = () => {
             </WhatWeDo>
           </div> */}
 
-        </Div>
+        {/* </Div> */}
       </Container>
     </Section>
   );

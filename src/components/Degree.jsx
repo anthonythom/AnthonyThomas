@@ -1,8 +1,6 @@
 import React, { Suspense } from "react";
 import styled from "styled-components";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import Cube from "./Cube";
+
 
 const Section = styled.div`
   height: 100vh;
@@ -19,14 +17,6 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const Left = styled.div`
-  flex: 1;
-  
-  
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-`;
 
 const Title = styled.h1`
   
@@ -103,23 +93,13 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const Who = () => {
+const Degree = () => {
   return (
-    <Section id="who" className="header_link">
+    <Section id="degree" className="header_link">
       <Container>
-        <Left>
-          <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
-            <Suspense fallback={null}>
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[3, 2, 1]} />
-              <Cube />
-
-              <OrbitControls enableZoom={true} autoRotate />
-            </Suspense>
-          </Canvas>
-        </Left>
+      
         <Right>
-          <Title>Qualificações</Title>
+          <Title>Formação</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>Hard Skills</Subtitle>
@@ -215,4 +195,4 @@ const Who = () => {
   );
 };
 
-export default Who;
+export default Degree;

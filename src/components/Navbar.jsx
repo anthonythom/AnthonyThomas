@@ -11,9 +11,11 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1400px;
+  width: 70rem;
   display: flex;
 
+
+ 
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
@@ -43,6 +45,12 @@ const List = styled.ul`
   gap: 20px;
   list-style: none;
   text-decoration: none;
+  color: #111;
+    font-weight: 800;
+    
+    font-family: sans-serif;
+  
+    font-family: 'Source Sans Pro',sans-serif;
 
 
   a:visited {
@@ -85,7 +93,7 @@ const ListItem = styled.li`
 
 
 const Button = styled.button`
-  width: 150px;
+  width: 10rem;
  
   background-color: #24c0d5;
   color: white;
@@ -102,6 +110,11 @@ const Button = styled.button`
 
 
   padding: 20px;
+
+  :hover {
+    color: white;
+    background-color: #ffee05;
+  }
 `;
 
 const Navbar = () => {
@@ -121,13 +134,13 @@ const Navbar = () => {
             <a href="./#works">
               <ListItem>Trabalhos</ListItem>
             </a>
-            <a href="./#contact" className="header_link">
+            <a href="./#contact" className="header_link" >
               <ListItem>Contato</ListItem>
             </a>
           </List>
         </Links>
 
-        <a href="mailto:anthonythomascontato@gmail.com">
+        <a href="mailto:anthonythomascontato@gmail.com" target="_blank" >
           <Button>
             Contrate agora!
           </Button>

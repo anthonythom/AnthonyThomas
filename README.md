@@ -1,13 +1,11 @@
 # <h1>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/> Portfolio de Anthony Thomas
 		
-      <a href="#">
+      
+	
         <img src="https://avatars.githubusercontent.com/u/95666367?v=4" width="100px;" alt="Foto do toninho"/>
-	      <br>
-        <sub>
-          <b>Anthony Thomas</b>
-        </sub>
-      </a>
+	     
+
 
 </h1>
 

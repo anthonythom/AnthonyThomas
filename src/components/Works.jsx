@@ -151,7 +151,7 @@ const Works = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="public\img\projeto 2.png"
+                    src="public/img/projeto 2.png"
                     alt="Second slide"
                 />
 
@@ -166,7 +166,7 @@ const Works = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-"
-                    src="public\img\projeto 3.png"
+                    src="public/img/projeto 3.png"
                     alt="Third slide"
                 />
 
@@ -184,7 +184,7 @@ const Works = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="public\img\projeto 4.png"
+                    src="public/img/projeto 4.png"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -201,7 +201,7 @@ const Works = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="public\img\tatuaria.png"
+                    src="public/img/tatuaria.png"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -219,248 +219,7 @@ const Works = () => {
 
 
 
-      
 
-
-        {/* <Div1> */}
-
-
-
-        {/* <div className="1">
-            <WhatWeDo>
-              <Image src="./img/project1.png" />
-
-
-              <Subtitle>Zumbilandia</Subtitle>
-              <Desc>
-                feito em 2022
-              </Desc>
-
-              <DivB>
-
-                <div>
-
-                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
-                    <Button>
-
-
-
-                      Ver mais
-                    </Button>
-                  </a>
-                </div>
-
-
-              </DivB>
-
-            </WhatWeDo>
-
-
-          </div> */}
-        {/* 
-          <div className="2">
-            <WhatWeDo>
-              <Image src="./img/projeto 2.png" />
-              <Subtitle>Game of Spin-Off</Subtitle>
-              <Desc>
-                feito em 2022
-
-
-              </Desc>
-              <DivB>
-                <div>
-                  <a href="https://github.com/hugolegramandi/SpinOff_GoT" target="_blank">
-                    <Button>
-                      Ver mais
-                    </Button>
-                  </a>
-
-                </div>
-
-              </DivB>
-            </WhatWeDo>
-          </div>
-
-          <div className="3">
-            <WhatWeDo>
-              <Image src="./img/projeto 3.png" />
-              <Subtitle>Astronomy Picture of The Day</Subtitle>
-              <Desc>
-                feito em 2022
-              </Desc>
-
-              <DivB>
-
-                <div>
-
-                  <a href="https://anthonythom.github.io/projeto-APOD/" target="_blank">
-                    <Button>
-
-
-
-                      Ver mais
-                    </Button>
-                  </a>
-                </div>
-
-
-              </DivB>
-            </WhatWeDo>
-          </div>
-
-          <div className="4">
-            <WhatWeDo>
-              <Image src="./img/projeto 4.png" />
-              <Subtitle>FrontEnders</Subtitle>
-              <Desc>
-                feito em 2022
-              </Desc>
-
-              <DivB>
-
-                <div>
-
-                  <a href="https://brunoblanquez.github.io/FrontEnders/index.html" target="_blank">
-                    <Button>
-
-
-
-                      Ver mais
-                    </Button>
-                  </a>
-                </div>
-
-
-              </DivB>
-            </WhatWeDo>
-          </div>
-
-
-          
-          <div className="5">
-
-            <WhatWeDo>
-              <Image src="./img/tatuaria.png" />
-              <Subtitle>Tatuaria</Subtitle>
-              <Desc>
-                feito em 2022
-              </Desc>
-
-              <DivB>
-
-                <div>
-
-                  <a href="https://github.com/anthonythom/M5-Resilia-API" target="_blank">
-                    <Button>
-
-
-
-                      Ver mais
-                    </Button>
-                  </a>
-                </div>
-
-
-              </DivB>
-            </WhatWeDo>
-          </div>
-
-
-        </Div1> */}
-
-
-
-
-        {/* <Div> */}
-
-
-
-
-        {/* <div className="6">
-
-            <WhatWeDo>
-              <Image src="img\work.png" />
-              <Subtitle>Proximos projetos</Subtitle>
-              <Desc>
-                em progresso
-              </Desc>
-
-              <DivB>
-
-                <div>
-
-                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
-                    <Button>
-
-
-
-                      Ver mais
-                    </Button>
-                  </a>
-                </div>
-
-
-              </DivB>
-            </WhatWeDo>
-          </div>
-
-
-          <div className="7">
-            <WhatWeDo>
-              <Image src="img\work.png" />
-              <Subtitle>Proximos projetos</Subtitle>
-              <Desc>
-                em progresso
-              </Desc>
-
-              <DivB>
-
-                <div>
-
-                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
-                    <Button>
-
-
-
-                      Ver mais
-                    </Button>
-                  </a>
-                </div>
-
-
-              </DivB>
-            </WhatWeDo>
-          </div>
-
-
-          <div className="8">
-
-            <WhatWeDo>
-              <Image src="img\work.png" />
-              <Subtitle>Proximos projetos</Subtitle>
-              <Desc>
-                em progresso
-              </Desc>
-
-              <DivB>
-                <div>
-
-                  <a href="public/CV_AnthonyThomas.pdf" target="_blank">
-                    <Button>
-
-
-
-                      Ver mais
-                    </Button>
-                  </a>
-                </div>
-
-
-              </DivB>
-            </WhatWeDo>
-          </div> */}
-
-        {/* </Div> */}
       </Container>
     </Section>
   );

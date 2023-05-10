@@ -51,12 +51,13 @@ $ npm start / npm run build
 <table>
 
 
-	  <td align="center">
+	  
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/95666367?v=4" width="100px;" alt="Foto do toninho"/><br>
+        <img src="https://avatars.githubusercontent.com/u/95666367?v=4" width="100px;" alt="Foto do toninho"/>
+	      <br>
         <sub>
           <b>Anthony Thomas</b>
         </sub>
       </a>
-    </td>
+  
 	  

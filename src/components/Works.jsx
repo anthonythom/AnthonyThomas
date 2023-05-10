@@ -151,7 +151,7 @@ const Works = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="public/img/projeto 2.png"
+                    src="./img/projeto 2.png"
                     alt="Second slide"
                 />
 
@@ -166,7 +166,7 @@ const Works = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-"
-                    src="public/img/projeto 3.png"
+                    src="./img/projeto 3.png"
                     alt="Third slide"
                 />
 
@@ -184,7 +184,7 @@ const Works = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="public/img/projeto 4.png"
+                    src="./img/projeto 4.png"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -201,7 +201,7 @@ const Works = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="public/img/tatuaria.png"
+                    src="./img/tatuaria.png"
                     alt="First slide"
                 />
                 <Carousel.Caption>

@@ -136,7 +136,7 @@ const Works = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="public\img\project1.png"
+                    src="./img/project1.png"
                     alt="First slide"
                 />
                 <Carousel.Caption>

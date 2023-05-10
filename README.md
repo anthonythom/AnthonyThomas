@@ -49,7 +49,7 @@ $ npm start / npm run build
 
 
 <table>
-  <tr>
+
 
 	  <td align="center">
       <a href="#">
@@ -60,4 +60,3 @@ $ npm start / npm run build
       </a>
     </td>
 	  
-  </tr>

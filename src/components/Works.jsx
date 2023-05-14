@@ -5,9 +5,9 @@ import Carousel from 'react-bootstrap/Carousel';
 const Section = styled.div`
   height: 150vh;
 
-  display: flex;
-position: relative;
-align-items: baseline;
+
+
+
 
 `;
 
@@ -15,8 +15,9 @@ const Container = styled.div`
   width: 100%;
  
   display: flex;
+flex-direction: column;
+ align-items: center;
 
-  flex-wrap: wrap;
   
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -28,7 +29,7 @@ const Title = styled.h1`
 font-size: 5rem;
     text-transform: uppercase;
  
-    color: #111;
+
     font-weight: 800;
     margin-left: 5rem;
     font-family: sans-serif;
@@ -87,7 +88,7 @@ flex-direction:column;
 `;
 const Left = styled.div`
 
-
+align-items: center;
 
  `
 const Image = styled.img`
@@ -126,16 +127,16 @@ const Works = () => {
   return (
     <Section id="works" className="header_link">
       <Container>
-
+<div>
         <Title>PORTFOLIO</Title>
+</div>
 
 
-
-      
+      <div>
         <Carousel>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className=" w-50 "
                     src="./img/project1.png"
                     alt="First slide"
                 />
@@ -150,7 +151,7 @@ const Works = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className=" w-50"
                     src="./img/projeto 2.png"
                     alt="Second slide"
                 />
@@ -165,7 +166,7 @@ const Works = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-"
+                    className=" w-50"
                     src="./img/projeto 3.png"
                     alt="Third slide"
                 />
@@ -183,7 +184,7 @@ const Works = () => {
 
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className=" w-50"
                     src="./img/projeto 4.png"
                     alt="First slide"
                 />
@@ -200,7 +201,7 @@ const Works = () => {
 
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="d-flex w-50 "
                     src="./img/tatuaria.png"
                     alt="First slide"
                 />
@@ -218,7 +219,7 @@ const Works = () => {
 
 
 
-
+</div>
 
       </Container>
     </Section>

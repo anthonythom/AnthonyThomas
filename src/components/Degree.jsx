@@ -15,6 +15,8 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+  color:  #e1e1e6;
+background-color:  #121214;
 `;
 
 
@@ -24,7 +26,7 @@ const Title = styled.h1`
     text-transform: uppercase;
     
    
-    color: #111;
+   
     font-weight: 800;
     
     font-family: sans-serif;
@@ -59,7 +61,7 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color:#0bb0de;
+    color: #ad93e5;
   font-weight: 800;
   font-family: sans-serif;
   
@@ -68,7 +70,7 @@ const Subtitle = styled.h2`
 
 const Desc = styled.div`
   font-size: 24px;
-  color: #000000;
+
 
  display: flex;
   align-items: center;
@@ -83,14 +85,35 @@ font-family: sans-serif;
 `;
 
 const Button = styled.button`
-  background-color: #0bb0de;
-  color: white;
-  font-weight: 500;
-  width: 120px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+ 
+ height: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:#6231cd ;
+    color:  #e1e1e6;
+    background: var(--background);
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+
+  @media (min-width: 320px){
+    padding: 12px 24px;
+    justify-content: center;
+}
+
+  
+    :hover {
+    color: white;
+    background-color: #6231cd  ;
+    box-shadow: rgb(100 100 111 / 50%) 0 7px 29px 0;
+  }
+
 `;
 
 const Degree = () => {

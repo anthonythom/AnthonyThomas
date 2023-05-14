@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Section = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
+ 
 `;
 
 const Container = styled.div`
@@ -20,15 +20,13 @@ const Container = styled.div`
 
 const Left = styled.div`
     box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
-    background: #ffffff;
-    padding: 4rem;
-  
 
-   
+
+    background-color:  #202024;
 display: flex;
 justify-content: center;
-    width: 35%;
-    height: 70%;
+    width: 40%;
+    height: 100%;
     border-radius: 5px;
     margin: 5rem auto 0 auto;
 
@@ -40,6 +38,7 @@ justify-content: center;
 `;
 
 const Title = styled.h1`
+margin-top: 4.5rem;
 display: flex;
 font-size: 50px;
   font-weight: 200px;
@@ -79,7 +78,7 @@ const Form = styled.form`
 
 const Input = styled.input`
   padding: 20px;
-  background-color: #ebebeb;
+  background-color:#121214;
   border: none;
   border-radius: 5px;
 `;
@@ -89,19 +88,38 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 5px;
   
-  background-color: #ebebeb;
+  background-color:#121214;
 `;
 
 const Button = styled.button`
 
-box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
-  background-color: #0bb0de;
-  color: #ffffff;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 20px;
+width: 100%;
+    height: 55px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:#6231cd ;
+    color:  #e1e1e6;
+    background-color:#121214;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+
+  @media (min-width: 320px){
+    padding: 12px 24px;
+    justify-content: center;
+}
+
+:hover {
+    color: white;
+    background-color: #6231cd  ;
+    box-shadow: rgb(100 100 111 / 50%) 0 7px 29px 0;
+  }
 `;
 
 
@@ -137,11 +155,11 @@ const Contact = () => {
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contato</Title>
-            
+
             <Line src="./img/line.png" />
 
             <Desc>
-Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve possível</Desc>
+              Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve possível.</Desc>
             <Input placeholder="Nome" name="name" />
             <Input placeholder="Email" name="email" />
             <TextArea
@@ -154,7 +172,7 @@ Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo 
               "Sua mensagem foi enviada com sucesso! Em breve retornaremos :)"}
           </Form>
         </Left>
-      
+
       </Container>
     </Section>
   );

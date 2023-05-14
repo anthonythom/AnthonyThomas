@@ -15,23 +15,30 @@ height: 100vh;
 
 overflow-y: auto;
 scrollbar-width: none;
-color: #000000;
-background-color: #ffffff;
+color:  #e1e1e6;
+background-color:  #121214;
 
 &::-webkit-scrollbar{
   display: none;
 }
+ /* minha paleta de cores
+.color1 { #6231cd };
+.color2 { #ad93e5 };
+.color3 { #281454 };
+.color4 { #4c4461 };
+.color5 { #3a1d7b }; */
 
 `
+
 
 function App() {
 
   return (
     <Container>
       <Navbar />
-      <Hero id="/" />
-      < Degree id="degree" />
-      < Who id="who" />
+      <Hero id="/hero" />
+      <Degree id="degree" />
+      <Who id="who" />
       <Works id="works" />
       <Contact id="contact" />
       <Footer />

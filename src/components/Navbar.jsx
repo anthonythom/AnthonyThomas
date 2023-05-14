@@ -1,26 +1,31 @@
 import React from "react";
 import styled from "styled-components";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Section = styled.div`
   display: flex;
   justify-content: center;
-
+  
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
 `;
 
 const Container = styled.div`
-  width: 70rem;
-  display: flex;
 
 
- 
-  justify-content: space-between;
+
+  background-color: #121214;
+  
+  justify-content: space-around;
+
   align-items: center;
-  padding: 10px 0px;
+  
+  border-bottom: 1px solid #444;
 
-   
+  box-shadow: 0 10px 100px rgba(138, 10, 202, 0.1);
+
   @media only screen and (max-width: 768px) {
     width: 100%;
     padding: 10px;
@@ -28,44 +33,57 @@ const Container = styled.div`
 `;
 
 const Links = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  :hover{
-    color: azure;
-  }
+display: flex;
+  margin-top: 0.5rem;
+  gap: 10rem;
+  color:  #a8a8b3;
+  font-size: 16px;
+
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease 0s;
+ 
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+
+    
+
+  
+    width: 0px;
+    height: 2px;
+   
+    transition: width 0.6s 
+    cubic-bezier(0.25, 1, 0.5, 1) 0s;
+
+
+    font-family: Roboto,sans-serif;
+    color: var(--text);
+
+
+   
+
+   
+
+
+
+
 `;
 
 const Logo = styled.img`
-  height: 50px;
+  height: 3rem;
 `;
 
 const List = styled.ul`
   display: flex;
   gap: 20px;
-  list-style: none;
-  text-decoration: none;
-  color: #111;
-    font-weight: 800;
-    
-    font-family: sans-serif;
-  
-    font-family: 'Source Sans Pro',sans-serif;
-
 
   a:visited {
-  color: #000000;
-  text-decoration: none;
-  list-style: none;
-  
+    
 
- 
 }
-
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-  
 
 
   @media only screen and (max-width: 768px) {
@@ -73,17 +91,41 @@ const List = styled.ul`
   }
 `;
 
-const ListItem = styled.li`
-  cursor: pointer;
 
-  list-style: none;
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+
+
+
+
+const ListItem = styled.li`
+
+
+
+position: relative;
+display: block;
+transition: 1.5s;
+
+::after{
+ 
+ position: absolute;
+ content: "_";
+ width: 100%;
+ height: 100%;
+ top: 100%;
+ left: 0;
+ transition: transform 1.5s;
+ transform: scaleX(1);
+ transform-origin: left;
+}
+
+:hover{
+ color: #6231cd;
+ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+}
+:hover::after{
+  transform: scaleX(15);
+  transform-origin: left;
+ 
+}
 
 
   
@@ -93,52 +135,76 @@ const ListItem = styled.li`
 
 
 const Button = styled.button`
-  width: 10rem;
- 
-  background-color: #24c0d5;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 19px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:#6231cd ;
+    color:  #e1e1e6;
+    background: var(--background);
+    text-transform: uppercase;
+    transition: all .3s ease;
+    
+  
 
-
-  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
-
-
-
-  font-weight: bold;
-
-
-  padding: 20px;
+  @media (min-width: 320px){
+    padding: 12px 24px;
+    justify-content: center;
+}
 
   :hover {
     color: white;
-    background-color: #ffee05;
+    background-color: #6231cd  ;
+    box-shadow: rgb(100 100 111 / 50%) 0 7px 29px 0;
+    
   }
 `;
 
+
+
+
+
+
 const Navbar = () => {
+
+
+
   return (
     <Section>
-      <Container>
-        <Links>
-          <Logo src="./img/logo.png" />
-          <List>
-            <a href="./">
+      <Container className="navbar  fixed-top">
+        <Links >
+
+          <a class="nav-link" href="./#hero">
+            <Logo src="./img/logo.png" />
+          </a>
+
+
+          <List class="nav-link">
+            <a class="nav-link" href="./#hero" >
               <ListItem>Início</ListItem>
             </a>
 
-            <a href="./#who" className="header_link">
+            <a class="nav-link" href="./#who">
               <ListItem>Sobre</ListItem>
             </a>
-            <a href="./#works">
+            <a class="nav-link" href="./#works">
               <ListItem>Trabalhos</ListItem>
             </a>
-            <a href="./#contact" className="header_link" >
+            <a class="nav-link" href="./#contact" >
               <ListItem>Contato</ListItem>
             </a>
           </List>
+
+
+
         </Links>
+
 
         <a href="mailto:anthonythomascontato@gmail.com" target="_blank" >
           <Button>
@@ -151,3 +217,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

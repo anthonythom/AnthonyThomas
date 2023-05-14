@@ -44,9 +44,7 @@ margin-left: 10vh;
   
     font-family: 'Source Sans Pro',sans-serif;
 
-    :hover {
-    color: #03cdff;
-  }
+
   
 `;
 
@@ -61,19 +59,22 @@ const Right = styled.div`
   
     font-family: 'Source Sans Pro',sans-serif;
 
-    :hover {
-    color: #03cdff;
-  }
+
   
 margin-right: 10vh;
 display: flex;
 flex-direction: column;
-color: #ffffff;
+
+display: flex;
+justify-content: space-between;
+
 a:visited {
-  color: #ffffff;
+  color: #6231cd;
   text-decoration: none;
   list-style: none;
 }
+
+
 
 `;
 
@@ -81,12 +82,20 @@ a:visited {
 
 
 const DivF = styled.div`
-background-color: #000000;
-padding: 2rem 0;
+
+
+
+
+ display: flex;
+align-items: center;
+justify-content: center; 
+
+
+
     border-top: 1px solid #444;
     color: #eee;
     font-size: 1rem;
-    text-align: center;
+    text-align: center; 
 
     a:visited {
   color: #ffffff;
@@ -94,6 +103,7 @@ padding: 2rem 0;
   list-style: none;
     }
 `;
+
 
 
 
@@ -105,11 +115,12 @@ const Footer = () => {
 
           <Left>
 
-            <h1>Anthony Thomas</h1>
+            <h1> Anthony Thomas </h1>
             <p>
-              Um desenvolvedor Web focado em Frontend, construindo o Front-end<br /> de sites e
-              aplicativos que levam ao sucesso do produto geral. <br /> Estou disponível para novos projetos no momento. <br /> Entre em contato comigo e marcamos uma conversa 👋
-
+              Um desenvolvedor Web focado em front-end, construindo o front-end<br /> 
+              de sites e aplicativos que levam ao sucesso do produto geral. <br /> 
+              Estou disponível para novos projetos no momento. <br /> 
+              Entre em contato comigo e marcamos uma conversa 👋
             </p>
           </Left>
 
@@ -160,9 +171,9 @@ const Footer = () => {
 
 
         <DivF>
-
-          <span>© Copyright 2023. Feito por</span><a rel="noreferrer" target="" href="https://anthonythomas.vercel.app"> Anthony Thomas </a>
-
+<div>
+          <span>© Copyright 2023. Feito por </span><a rel="noreferrer" target="" href="https://anthonythomas.vercel.app">  Anthony Thomas </a>
+</div>
 
         </DivF>
 

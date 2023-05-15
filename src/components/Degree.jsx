@@ -4,20 +4,233 @@ import styled from "styled-components";
 
 const Section = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
   display: flex;
   justify-content: center;
 `;
 
 const Container = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
   width: 1400px;
   display: flex;
   justify-content: space-between;
   color:  #e1e1e6;
 background-color:  #121214;
 `;
+
+
+
+
+const FormacaoContainer = styled.div`
+
+display: grid;
+
+grid-template-columns: 2fr 2fr;
+gap: 100px;
+position: relative;
+:after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+  @media (max-width: 800px) {
+   
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+}
+` 
+ 
+
+const FormacaoTexto = styled.div`
+font-size: 1.5rem;
+line-height: 1.33;
+max-width: 40ch;
+margin-bottom: 60px;
+color: #a3a3a3;` 
+
+
+const List = styled.ul`
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+ 
+    
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+const ListItemFac = styled.li`
+
+flex: 1;
+  background: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+
+position: relative;
+display: block;
+transition: 1.5s;
+
+::after{
+ 
+ position: absolute;
+ content: "_";
+ width: 100%;
+ height: 100%;
+ top: 100%;
+ left: 0;
+ transition: transform 1.5s;
+ transform: scaleX(1);
+ transform-origin: left;
+}
+
+:hover{
+ color: #6231cd;
+ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+}
+:hover::after{
+  transform: scaleX(15);
+  transform-origin: left;
+ 
+}
+
+
+  
+`;
+
+
+
+
+
+
+// .formacao .subtitulo {
+//   color: #000000;
+//   max-width: 5ch;
+// }
+
+
+  
+
+
+// .formacao-texto strong {
+//   color: #ffffff;
+// }
+
+
+const FacTipo = styled.h1`  
+font-size: 0.875rem;
+text-transform: uppercase;
+color: #a3a3a3;
+margin-bottom: 10px;`
+
+const FacCurso = styled.h1`  
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+
+  :before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -24px;
+}
+  `
+const FacInstitu = styled.span`  
+  font-size: 1.125rem;
+  color: #a3a3a3;`
+
+
+const FormacaoExtra= styled.h3`  
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+  
+li{ font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;}
+
+  span{
+    color: #8f8f8f;
+  }
+
+
+  :before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+
+  
+}
+  `
+const Cursos = styled.div`  
+margin-bottom: 60px;
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+:before {
+ background: url("./img/cursos.svg") no-repeat center center;
+}
+`
+const Idiomas = styled.div`  
+
+:before {
+ background: url("./img/idiomas.svg") no-repeat center center;
+}
+`
+
+const Span = styled.h6`  
+
+  color: #ffffff;`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const Title = styled.h1`
@@ -120,82 +333,69 @@ const Degree = () => {
   return (
     <Section id="degree" className="header_link">
       <Container>
-      
+
         <Right>
           <Title>Formação</Title>
-          <WhatWeDo>
-            <Line src="./img/line.png" />
-            <Subtitle>Hard Skills</Subtitle>
-          </WhatWeDo>
+
           <Desc>
-            <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
-
-            <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
-            <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
-            <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
+            <section class="formacao" id="formacao" aria-label="Formação">
+              <FormacaoContainer>
 
 
+                <div>
+                  <FormacaoTexto>
+                    Minha mais recente experiência acadêmica foi o curso de <strong>Web Desenvolvimento</strong> 🎓 que fiz na instituição de ensino <strong>Alura</strong> em parceria com a <strong>Oracle</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
+                  </FormacaoTexto>
 
-          </Desc>
+                  <List>
+                    <ListItemFac>
+                      <FacTipo>Graduação</FacTipo>
+                      <FacCurso>Analise e Desenvolvimento de Sistemas</FacCurso>
+                      <FacInstitu>Universidade Unyleya</FacInstitu>
+                    </ListItemFac>
 
+                    <ListItemFac>
+                      <FacTipo>Bootcamp</FacTipo>
+                      <FacCurso>Web Desenvolvimento </FacCurso>
+                      <FacInstitu>Resilia Educação</FacInstitu>
+                      </ListItemFac>
+                      <ListItemFac>
+                      <FacTipo>Bootcamp</FacTipo>
+                      <FacCurso>Web Desenvolvimento</FacCurso>
+                      <FacInstitu>Alura + Oracle</FacInstitu>
+                      </ListItemFac>
+                  </List>
 
-          <WhatWeDo>
-            <Line src="./img/line.png" />
-            <Subtitle>Soft Skills</Subtitle>
-          </WhatWeDo>
-          <Desc>
-            <div>
-              <li> Trabalho em equipe  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
+                  <FormacaoExtra>
+                    <Cursos>
+                      <h3>Cursos Intensivos</h3>
+                      <ul>
+                        <li>UX Design & UI Design <Span>56h</Span></li>
+                        <li>Front End para Iniciantes <Span>72h</Span></li>
+                      </ul>
+                    </Cursos>
 
-            <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
-            <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
-            <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
+                    <Idiomas>
+                      <h3>Idiomas</h3>
+                      <ul>
+                        <li>Inglês <Span>/ Fluente</Span></li>
+                        <li>Espanhol <Span>/ Intermediário</Span></li>
+                      </ul>
+                    </Idiomas>
+                  </FormacaoExtra>
+                </div>
+              </FormacaoContainer>
+            </section>
 
 
           </Desc>
 
 
 
-          <WhatWeDo>
+
+
+
+          {/* <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>Idiomas</Subtitle>
           </WhatWeDo>
@@ -204,7 +404,7 @@ const Degree = () => {
 
 
 
-          </Desc>
+          </Desc> */}
 
 
 

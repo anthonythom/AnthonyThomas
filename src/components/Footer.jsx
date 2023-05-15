@@ -42,7 +42,7 @@ margin-left: 10vh;
     
     
   
-    font-family: 'Source Sans Pro',sans-serif;
+    font-family: 'Playfair Display SC', serif;
 
 
   
@@ -57,7 +57,7 @@ const Right = styled.div`
     text-decoration: none;
     
   
-    font-family: 'Source Sans Pro',sans-serif;
+    font-family: 'Playfair Display SC', serif;
 
 
   

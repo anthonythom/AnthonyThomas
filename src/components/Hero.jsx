@@ -3,9 +3,14 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
+import TrackVisibility from 'react-on-screen';
+import { Row, Col } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import 'animate.css';
+import ('tailwindcss').Config
 
 const Section = styled.div`
-  height: 100vh;
+  height: 1000px;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -20,7 +25,7 @@ background-color:  #121214;
 `;
 
 const Container = styled.div`
-  height: 100%;
+  height: 1400vh;
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
@@ -37,6 +42,8 @@ background-color:  #121214;
   }
 `;
 
+
+
 const Left = styled.div`
   flex: 2;
   display: flex;
@@ -50,26 +57,12 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
-
-
-
-
-font-size: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
+ display: inline-block;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  font-size: 3rem;
  
-    font-weight: 800;
-    
-    font-family: sans-serif;
-  
-    font-family: 'Source Sans Pro',sans-serif;
-
-   :hover {
-    color: #00ff00;
-  }
-
   
 
   @media only screen and (max-width: 768px) {
@@ -94,6 +87,7 @@ const Line = styled.img`
 const Subtitle = styled.h2`
   color: #ad93e5;
   text-align: justify;
+  
 `;
 
 const Desc = styled.p`
@@ -138,34 +132,49 @@ const Button = styled.button`
   
 `;
 const DivB = styled.div`
-color: #6231cd;
+
 display: flex;
 justify-content: space-between;
 
+
+
+`;
+
+const DivL = styled.a`
+
+color: #6231cd;
+
+
 a:visited {
-  color: #6231cd;
+  color: #6231cd ;
   text-decoration: none;
   list-style: none;
 }
-:hover{
- color: #fbfbfb ;
+a:hover{
+ color: #ffffff ;
 }
-:hover::after{
-  transform: scaleX(1);
+a:hover::after{
+  transform: scaleX(11);
   transform-origin: left;
 }
 
 
+
 `;
+
+
 
 const Right = styled.div`
   flex: 3;
   position: relative;
+
   @media only screen and (max-width: 768px) {
     flex: 1;
-    width: 100%;
+    width: 50%;
   }
 `;
+
+
 
 // const Img = styled.img`
 //   width: 800px;
@@ -191,12 +200,70 @@ const Right = styled.div`
 // `;
 
 const Hero = () => {
+
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const period = 2000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => { clearInterval(ticker) };
+  }, [text])
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta(prevDelta => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex(prevIndex => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(500);
+    } else {
+      setIndex(prevIndex => prevIndex + 1);
+    }
+  }
+
+
+
+
   return (
     <Section id="hero" className="header_link">
       <Navbar />
-      <Container>
-        <Left>
-          <Title>Anthony Thomas</Title>
+      <Container >
+        <Left >
+          <Row >
+            <Col xs={12} md={6} xl={10}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                    <Title>
+                      <h1 class="text-5xl">{`Anthony Thomas`}   <br /><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+
+                    </Title>
+                  </div>}
+              </TrackVisibility>
+            </Col>
+          </Row>
+
           <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>Desenvolvedor FullStack</Subtitle>
@@ -209,17 +276,15 @@ const Hero = () => {
           </Desc>
 
           <DivB>
+            
             <Button>
-
               Saber mais
-
             </Button>
 
 
 
-            <div>
-
-
+            <DivL>
+              <div>
               <a href="https://www.linkedin.com/in/anthonythomasmm/" target={'_blank'} >
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
@@ -237,28 +302,31 @@ const Hero = () => {
                   <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                 </svg>
               </a>
+              </div>
+            </DivL>
 
-
-            </div>
           </DivB>
         </Left>
-        <Right>
+        <Right >
+
           <Canvas>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
-              <ambientLight intensity={0.20} />
+              <ambientLight intensity={0.30} />
               <directionalLight position={[6, 4, 5]} />
-              <Sphere args={[0.9, 100, 100]} scale={2.2}>
+              <Sphere args={[0.7, 100, 100]} scale={2.0}>
                 <MeshDistortMaterial
-                  color="#6231cd"
+                  color="#5f2eca"
                   attach="material"
-                  distort={0.5}
-                  speed={2.5}
+                  distort={0.8}
+                  speed={2.}
                 />
               </Sphere>
             </Suspense>
           </Canvas>
           {/* <Img src="./img/rick-and-morty-rick-unscreen.gif"/ > */}
+
+
         </Right>
       </Container>
     </Section>

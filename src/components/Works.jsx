@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Carousel from 'react-bootstrap/Carousel';
 
 const Section = styled.div`
-  height: 150vh;
+  height: 100vh;
 
 
   display: flex;
@@ -155,6 +155,7 @@ const Works = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
+                  <div className="card"></div>
                     <h1>Zumbilandia</h1>
                     <p>Jogo de escolhas feito utilizando HTML/CSS e JavaScript.</p>
                     <a href="https://github.com/hugolegramandi/SpinOff_GoT" target="_blank">

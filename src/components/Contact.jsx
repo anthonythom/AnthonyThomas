@@ -81,13 +81,14 @@ const Input = styled.input`
   background-color:#121214;
   border: none;
   border-radius: 5px;
+  color:  #e1e1e6;
 `;
 
 const TextArea = styled.textarea`
   padding: 20px;
   border: none;
   border-radius: 5px;
-  
+   color:  #e1e1e6;
   background-color:#121214;
 `;
 

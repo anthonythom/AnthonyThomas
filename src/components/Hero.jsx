@@ -11,7 +11,7 @@ import ('tailwindcss').Config
 
 const Section = styled.div`
   height: 1000px;
-  scroll-snap-align: center;
+
   display: flex;
   flex-direction: column;
   align-items: center;

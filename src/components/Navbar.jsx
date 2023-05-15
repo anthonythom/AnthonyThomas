@@ -98,7 +98,20 @@ const List = styled.ul`
 
 const ListItem = styled.li`
 
+font-size: 1rem;
+    text-transform: uppercase;
+    
+   
 
+    font-weight: 400;
+    
+    
+  
+    font-family: 'Source Sans Pro',sans-serif;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 60px;
+  }
 
 position: relative;
 display: block;

@@ -6,15 +6,17 @@ const Section = styled.div`
   height: 150vh;
 
 
-
+  display: flex;
+  justify-content: center;
 
 
 `;
 
 const Container = styled.div`
-  width: 100%;
+  width: 75%;
  
   display: flex;
+  justify-content: center;
 flex-direction: column;
  align-items: center;
 
@@ -29,14 +31,30 @@ const Title = styled.h1`
 font-size: 5rem;
     text-transform: uppercase;
  
+    font-size: 5rem;
+    text-transform: uppercase;
+    
+   
 
     font-weight: 800;
-    margin-left: 5rem;
+    
+    font-family: sans-serif;
+  
+    font-family: 'Source Sans Pro',sans-serif;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 60px;
+  }
+
+
+    font-weight: 800;
+    margin-left: -45rem;
     font-family: sans-serif;
   
     font-family: 'Source Sans Pro',sans-serif;
 
 
+    margin-bottom: 5rem;
   
   @media only screen and (max-width: 768px) {
     font-size: 15px;
@@ -91,11 +109,7 @@ const Left = styled.div`
 align-items: center;
 
  `
-const Image = styled.img`
 
-
-
-`;
 
 const Subtitle = styled.h2`
   color: #0bb0de;
@@ -132,11 +146,11 @@ const Works = () => {
 </div>
 
 
-      <div>
+      
         <Carousel>
             <Carousel.Item>
                 <img
-                    className=" w-50 "
+                    className=" w-100 d-flex justify-content-center"
                     src="./img/project1.png"
                     alt="First slide"
                 />
@@ -151,7 +165,7 @@ const Works = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className=" w-50"
+                    className="d-flex justify-content-center w-100"
                     src="./img/projeto 2.png"
                     alt="Second slide"
                 />
@@ -166,13 +180,13 @@ const Works = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className=" w-50"
+                    className="d-flex justify-content-center w-100"
                     src="./img/projeto 3.png"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h1>Third slide label</h1>
+                    <h1>Astronomy Picture of The Day</h1>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
@@ -184,7 +198,7 @@ const Works = () => {
 
             <Carousel.Item>
                 <img
-                    className=" w-50"
+                    className=" w-100 d-flex justify-content-center"
                     src="./img/projeto 4.png"
                     alt="First slide"
                 />
@@ -201,7 +215,7 @@ const Works = () => {
 
             <Carousel.Item>
                 <img
-                    className="d-flex w-50 "
+                    className=" w-100 d-flex justify-content-center "
                     src="./img/tatuaria.png"
                     alt="First slide"
                 />
@@ -215,11 +229,10 @@ const Works = () => {
             </Carousel.Item>
 
         </Carousel>
-    );
+   
 
 
 
-</div>
 
       </Container>
     </Section>

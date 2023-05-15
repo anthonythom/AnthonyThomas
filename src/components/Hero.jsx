@@ -19,6 +19,22 @@ const Section = styled.div`
   color:  #e1e1e6;
 background-color:  #121214;
 
+h1{
+  font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+   
+
+    font-weight: 800;
+    
+   
+    font-family: 'Source Sans Pro',sans-serif;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 60px;
+  }
+}
+
   @media only screen and (max-width: 768px) {
     height: 200vh;
   }

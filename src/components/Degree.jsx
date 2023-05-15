@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const Section = styled.div`
   height: 100vh;
+ 
   /* scroll-snap-align: center; */
   display: flex;
   justify-content: center;
@@ -11,10 +12,10 @@ const Section = styled.div`
 
 const Container = styled.div`
   height: 100vh;
-  /* scroll-snap-align: center; */
+ 
   width: 1400px;
-  display: flex;
-  justify-content: space-between;
+
+ 
   color:  #e1e1e6;
 background-color:  #121214;
 `;
@@ -26,9 +27,10 @@ const FormacaoContainer = styled.div`
 
 display: grid;
 
-grid-template-columns: 2fr 2fr;
-gap: 100px;
+grid-template-columns: 15fr 1fr;
+gap: 0px;
 position: relative;
+
 :after {
   content: "";
   display: block;
@@ -45,15 +47,24 @@ position: relative;
     padding: 60px 20px;
     gap: 40px;
 }
-` 
- 
+`
+
 
 const FormacaoTexto = styled.div`
-font-size: 1.5rem;
+  font-size: 24px;
+
+
+font-family: 'Playfair Display SC', serif;
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+    text-align: center;
+  }
+
 line-height: 1.33;
-max-width: 40ch;
+max-width: 100ch;
 margin-bottom: 60px;
-color: #a3a3a3;` 
+color: #a3a3a3;
+`
 
 
 const List = styled.ul`
@@ -123,7 +134,7 @@ transition: 1.5s;
 // }
 
 
-  
+
 
 
 // .formacao-texto strong {
@@ -159,7 +170,7 @@ const FacInstitu = styled.span`
   color: #a3a3a3;`
 
 
-const FormacaoExtra= styled.h3`  
+const FormacaoExtra = styled.h3`  
   font-size: 0.875rem;
   line-height: 1.4;
   color: #8f8f8f;
@@ -167,13 +178,13 @@ const FormacaoExtra= styled.h3`
   margin-bottom: 30px;
   position: relative;
   
-li{ font-size: 1.125rem;
-  line-height: 1.1;
-  margin-bottom: 20px;}
+li{
+   font-size: 1.125rem;
+  line-height: 1.0;
+  margin-bottom: 1rem;
+}
 
-  span{
-    color: #8f8f8f;
-  }
+
 
 
   :before {
@@ -197,15 +208,11 @@ li {
 }
 
 
-:before {
- background: url("./img/cursos.svg") no-repeat center center;
-}
+
 `
 const Idiomas = styled.div`  
 
-:before {
- background: url("./img/idiomas.svg") no-repeat center center;
-}
+
 `
 
 const Span = styled.h6`  
@@ -242,7 +249,7 @@ const Title = styled.h1`
    
     font-weight: 800;
     
-    font-family: sans-serif;
+ 
   
     font-family: 'Source Sans Pro',sans-serif;
 
@@ -263,23 +270,11 @@ const Right = styled.div`
   }
 `;
 
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
 
-const Line = styled.img`
-  height: 5px;
-`;
 
-const Subtitle = styled.h2`
-    color: #ad93e5;
-  font-weight: 800;
-  font-family: sans-serif;
-  
-  font-family: 'Source Sans Pro',sans-serif;
-`;
+
+
+
 
 const Desc = styled.div`
   font-size: 24px;
@@ -298,8 +293,9 @@ font-family: sans-serif;
 `;
 
 const Button = styled.button`
- 
- height: 50px;
+ margin-left: 70rem;
+ margin-bottom: 20px;
+  height: 50px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 700;
@@ -338,7 +334,7 @@ const Degree = () => {
           <Title>Formação</Title>
 
           <Desc>
-            <section class="formacao" id="formacao" aria-label="Formação">
+       
               <FormacaoContainer>
 
 
@@ -347,23 +343,28 @@ const Degree = () => {
                     Minha mais recente experiência acadêmica foi o curso de <strong>Web Desenvolvimento</strong> 🎓 que fiz na instituição de ensino <strong>Alura</strong> em parceria com a <strong>Oracle</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
                   </FormacaoTexto>
 
+                  <a href="./CV_AnthonyThomas.pdf" download>
+            <Button>
+              Baixar CV
+            </Button></a>
+
                   <List>
                     <ListItemFac>
                       <FacTipo>Graduação</FacTipo>
-                      <FacCurso>Analise e Desenvolvimento de Sistemas</FacCurso>
+                      <FacCurso>Análise e Desenvolvimento de Sistemas</FacCurso>
                       <FacInstitu>Universidade Unyleya</FacInstitu>
                     </ListItemFac>
 
                     <ListItemFac>
                       <FacTipo>Bootcamp</FacTipo>
-                      <FacCurso>Web Desenvolvimento </FacCurso>
+                      <FacCurso> Desenvolvimento Web Full-Stack </FacCurso>
                       <FacInstitu>Resilia Educação</FacInstitu>
-                      </ListItemFac>
-                      <ListItemFac>
+                    </ListItemFac>
+                    <ListItemFac>
                       <FacTipo>Bootcamp</FacTipo>
-                      <FacCurso>Web Desenvolvimento</FacCurso>
+                      <FacCurso>Desenvolvimento Web Full-Stack</FacCurso>
                       <FacInstitu>Alura + Oracle</FacInstitu>
-                      </ListItemFac>
+                    </ListItemFac>
                   </List>
 
                   <FormacaoExtra>
@@ -372,46 +373,34 @@ const Degree = () => {
                       <ul>
                         <li>UX Design & UI Design <Span>56h</Span></li>
                         <li>Front End para Iniciantes <Span>72h</Span></li>
+                        <li> Agilidade: promovendo a transformação ágil <Span>16h</Span></li>
+                        
+                        
+                       
+                        
                       </ul>
+                      <ul>
+
+                      </ul>
+
                     </Cursos>
 
                     <Idiomas>
                       <h3>Idiomas</h3>
                       <ul>
-                        <li>Inglês <Span>/ Fluente</Span></li>
-                        <li>Espanhol <Span>/ Intermediário</Span></li>
+
+                        <li>Inglês <Span>/ Intermediário</Span></li>
+                        <li>Espanhol <Span>/Basico </Span></li>
                       </ul>
                     </Idiomas>
                   </FormacaoExtra>
                 </div>
               </FormacaoContainer>
-            </section>
+          
 
 
           </Desc>
-
-
-
-
-
-
-          {/* <WhatWeDo>
-            <Line src="./img/line.png" />
-            <Subtitle>Idiomas</Subtitle>
-          </WhatWeDo>
-          <Desc> <li><b>Português</b> / Nativo <br /></li>
-            <li><b>Inglês</b> / Intermediario <br /></li>
-
-
-
-          </Desc> */}
-
-
-
-          <a href="./CV_AnthonyThomas.pdf" download>
-            <Button>
-              Baixar CV
-            </Button></a>
+         
         </Right>
       </Container>
     </Section>

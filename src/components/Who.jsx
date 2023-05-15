@@ -5,15 +5,16 @@ import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
 
 const Section = styled.div`
+margin-top: 10rem;
   height: 100vh;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
   display: flex;
   justify-content: center;
 `;
 
 const Container = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
   width: 1400px;
   display: flex;
   justify-content: space-between;
@@ -62,18 +63,68 @@ const WhatWeDo = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+
 `;
 
 const Line = styled.img`
-  height: 5px;
+
+
 `;
 
-const Subtitle = styled.h2`
- color: #ad93e5;
+const Subtitle = styled.h1`
+
   font-weight: 800;
-  font-family: sans-serif;
+
+
+  flex: 1;
+  background: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+
+position: relative;
+display: block;
+transition: 1.5s;
+
+::after{
+ 
+ position: absolute;
+ content: "_";
+ width: 100%;
+ height: 100%;
+ top: 100%;
+ left: 0;
+ transition: transform 1.5s;
+ transform: scaleX(1);
+ transform-origin: left;
+}
+
+:hover{
+ color: #6231cd;
+ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+}
+:hover::after{
+  transform: scaleX(15);
+  transform-origin: left;
+  cursor: pointer;
+ 
+}
+
+ 
   
-  font-family: 'Source Sans Pro',sans-serif;
+  margin-bottom: 25px;
+  position: relative;
+
+  :before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -2px;
+}
 `;
 
 const Desc = styled.div`
@@ -112,34 +163,37 @@ const Who = () => {
         <Right>
           <Title>Qualificações</Title>
           <WhatWeDo>
-            <Line src="./img/line.png" />
+            
             <Subtitle>Hard Skills</Subtitle>
           </WhatWeDo>
           <Desc>
+         
             <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
+              <li> <strong>HTML</strong> </li>
+              <li> <strong>CSS</strong> </li>
+              <li> <strong>JavaScript</strong> </li>
+              <li> <strong>Bootstrap</strong> </li>
             </div>
 
             <div>
-              <li> React.js  </li>
+              <li> <strong>React.js</strong>  </li>
               <li>Next.js </li>
               <li>Three.js </li>
+              <li> Tailwind CSS </li>
+            </div>
+
+
+            <div>
+              <li> MySQL </li>
+              <li> MongoDB </li>
+              <li> Power BI </li>
               <li>JavaScript   </li>
             </div>
             <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
-            <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
+              <li> REST APIs </li>
+              <li> jQuery </li>
+              <li> Express </li>
+              <li> Node.js  </li>
             </div>
 
 
@@ -148,34 +202,37 @@ const Who = () => {
 
 
           <WhatWeDo>
-            <Line src="./img/line.png" />
+           
             <Subtitle>Soft Skills</Subtitle>
           </WhatWeDo>
           <Desc>
             <div>
-              <li> Trabalho em equipe  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
+              <li> Inteligência Emocional  </li>
+              <li> Vontade de aprender </li>
+              <li>  </li>
+              <li>  </li>
+            </div>
+
+          
+            <div>
+              <li> Resiliência</li>
+              <li> Proatividade </li>
+              <li>  </li>
+              <li>  </li>
             </div>
 
             <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
+              <li> Kanban </li>
+              <li> Scrum </li>
+              <li>  </li>
+              <li>  </li>
             </div>
+
             <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
-            </div>
-            <div>
-              <li> React.js  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li>JavaScript   </li>
+              <li>   </li>
+              <li>   </li>
+              <li>   </li>
+              <li>   </li>
             </div>
 
 
@@ -183,17 +240,7 @@ const Who = () => {
 
 
 
-          <WhatWeDo>
-            <Line src="./img/line.png" />
-            <Subtitle>Idiomas</Subtitle>
-          </WhatWeDo>
-          <Desc> <li><b>Português</b> / Nativo <br /></li>
-            <li><b>Inglês</b> / Intermediario <br /></li>
-
-
-
-          </Desc>
-
+       
 
 
         

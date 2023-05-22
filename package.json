@@ -24,6 +24,7 @@
     "react-bootstrap": "^2.7.4",
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
     "react-on-screen": "^2.1.1",
     "react-responsive-carousel": "^3.2.23",
     "react-simple-maps": "^3.0.0",

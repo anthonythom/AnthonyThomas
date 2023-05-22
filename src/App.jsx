@@ -7,17 +7,18 @@ import Contact from "./components/Contact"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Container = styled.div`
 height: 100vh;
- scroll-snap-type: y proximity;
+
   scroll-behavior: smooth;
 
 overflow-y: auto;
 scrollbar-width: none;
 color:  #e1e1e6;
-background-color:  #121214;
+background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#bcc1cd 90deg,#050505 1turn);
 
 &::-webkit-scrollbar{
   display: none;
@@ -30,6 +31,10 @@ background-color:  #121214;
 .color5 { #3a1d7b }; */
 
 `
+
+
+
+
 
 
 function App() {

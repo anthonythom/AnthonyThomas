@@ -17,7 +17,7 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   color:  #e1e1e6;
-background-color:  #121214;
+
 
 h1{
   font-size: 4rem;
@@ -48,7 +48,7 @@ const Container = styled.div`
   justify-content: space-between;
 
   color:  #e1e1e6;
-background-color:  #121214;
+
 
   @media only screen and (max-width: 768px) {
     width: 100%;

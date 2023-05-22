@@ -31,10 +31,6 @@ const Title = styled.h1`
 font-size: 5rem;
     text-transform: uppercase;
  
-    font-size: 5rem;
-    text-transform: uppercase;
-    
-   
 
     font-weight: 800;
     
@@ -135,7 +131,51 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
 `;
+ const Card = styled.div`
+margin-left: 250px;
+width:50%;
 
+
+h1{
+  font-size: 2rem;
+  
+ 
+
+    font-weight: 800;
+    
+    font-family: sans-serif;
+  
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+
+ background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 17, 17, 17, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 16, 16, 16, 0.35 );
+    
+    button{
+  cursor: pointer;
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+
+
+
+  transition: all 0.3s ease;
+  margin-top: 5rem;
+  margin-left: 1rem;
+
+  :hover {
+    color: white;
+    background-color: #6231cd;
+    box-shadow: rgb(100 100 111 / 50%) 0 7px 29px 0;
+  }
+    }
+
+ `
 
 const Works = () => {
   return (
@@ -155,12 +195,12 @@ const Works = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                  <div className="card"></div>
-                    <h1>Zumbilandia</h1>
+                  <Card>   <h1>Zumbilandia</h1>
                     <p>Jogo de escolhas feito utilizando HTML/CSS e JavaScript.</p>
                     <a href="https://github.com/hugolegramandi/SpinOff_GoT" target="_blank">
                     <button type="button" class="btn btn-outline-light">Ver mais.</button>
-                  </a>
+                  </a></Card>
+                 
 
                 </Carousel.Caption>
             </Carousel.Item>
@@ -172,11 +212,12 @@ const Works = () => {
                 />
 
                 <Carousel.Caption>
-                    <h1>Game of Spin-Off</h1>
+                   <Card><h1>Game of Spin-Off</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="https://github.com/hugolegramandi/SpinOff_GoT" target="_blank">
                     <button type="button" class="btn btn-outline-light">Ver mais.</button>
-                  </a>
+                  </a></Card>
+                    
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -187,13 +228,14 @@ const Works = () => {
                 />
 
                 <Carousel.Caption>
-                    <h1>Astronomy Picture of The Day</h1>
+                  <Card>       <h1>Astronomy Picture of The Day</h1>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
                     <a href="https://github.com/hugolegramandi/SpinOff_GoT" target="_blank">
                     <button type="button" class="btn btn-outline-light">Ver mais.</button>
-                  </a>
+                  </a></Card>
+             
                 </Carousel.Caption>
             </Carousel.Item>
 
@@ -204,11 +246,12 @@ const Works = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h1>FrontEnders</h1>
+                  <Card>   <h1>FrontEnders</h1>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     <a href="https://github.com/hugolegramandi/SpinOff_GoT" target="_blank">
                     <button type="button" class="btn btn-outline-light">Ver mais.</button>
-                  </a>
+                  </a></Card>
+                 
 
                 </Carousel.Caption>
             </Carousel.Item>
@@ -221,11 +264,12 @@ const Works = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h1>Tatuaria</h1>
+                  <Card><h1>Tatuaria</h1>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     <a href="https://github.com/hugolegramandi/SpinOff_GoT" target="_blank">
                     <button type="button" class="btn btn-outline-light">Ver mais.</button>
-                  </a>
+                  </a></Card>
+                    
                 </Carousel.Caption>
             </Carousel.Item>
 

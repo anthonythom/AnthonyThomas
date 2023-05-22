@@ -17,7 +17,7 @@ const Container = styled.div`
 
  
   color:  #e1e1e6;
-background-color:  #121214;
+
 `;
 
 

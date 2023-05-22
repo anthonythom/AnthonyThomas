@@ -24,7 +24,7 @@ const Container = styled.div`
   
   border-bottom: 1px solid #444;
 
-  box-shadow: 0 10px 100px rgba(138, 10, 202, 0.1);
+  box-shadow: 0 10px 50px rgba(232, 227, 234, 0.1);
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -38,7 +38,13 @@ display: flex;
   gap: 10rem;
   color:  #a8a8b3;
   font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
 
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: uppercase;
 
     height: 100%;
     display: flex;
@@ -230,6 +236,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-

@@ -13,7 +13,7 @@
 <h2>Sobre o projeto:</h2>
 <p> Portfolio de Anthony Thomas, Desenvolvedor Web Fullstack.</p>
 
-Este site é o portfolio online de Anthony Thomas, um talentoso desenvolvedor fullstack. Aqui, você encontrará informações sobre suas habilidades, projetos e experiência profissional em desenvolvimento de software. O objetivo deste site é fornecer uma visão abrangente das capacidades técnicas de Anthony Thomas, destacando seus projetos e conquistas como desenvolvedor.
+Este site é o portfolio online de Anthony Thomas. Aqui, você encontrará informações sobre suas habilidades, projetos e experiência profissional em desenvolvimento de software. O objetivo deste site é fornecer uma visão abrangente das capacidades técnicas de Anthony Thomas, destacando seus projetos e conquistas como desenvolvedor.
 
 Características principais:
 

@@ -9,8 +9,9 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
+margin-top: 250px;
   width: 100%;
-  height: 100%;
+  height: 87%;
   display: flex;
 
   justify-content: space-between;
@@ -25,7 +26,7 @@ const Left = styled.div`
     background-color:  #202024;
 display: flex;
 justify-content: center;
-    width: 40%;
+    width: 37%;
     height: 100%;
     border-radius: 5px;
     margin: 5rem auto 0 auto;
@@ -38,7 +39,7 @@ justify-content: center;
 `;
 
 const Title = styled.h1`
-margin-top: 4.5rem;
+margin-top: 35px;
 display: flex;
 font-size: 50px;
   font-weight: 200px;
@@ -166,7 +167,7 @@ const Contact = () => {
             <TextArea
               placeholder="Escreva sua mensagem:"
               name="message"
-              rows={10}
+              rows={7}
             />
             <Button type="submit">Enviar</Button>
             {success &&

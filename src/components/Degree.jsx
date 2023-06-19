@@ -343,7 +343,7 @@ const Degree = () => {
                     Minha mais recente experiência acadêmica foi o curso de <strong>Web Desenvolvimento</strong> 🎓 que fiz na instituição de ensino <strong>Alura</strong> em parceria com a <strong>Oracle</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
                   </FormacaoTexto>
 
-                  <a href="./CV_AnthonyThomas.pdf" download>
+                  <a href="./AnthonyThomasCV.pdf" download>
             <Button>
               Baixar CV
             </Button></a>

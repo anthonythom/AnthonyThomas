@@ -160,40 +160,73 @@ const Who = () => {
             </Suspense>
           </Canvas>
         </Left>
+
+
+        
         <Right>
           <Title>Qualificações</Title>
           <WhatWeDo>
-            
+
             <Subtitle>Hard Skills</Subtitle>
           </WhatWeDo>
           <Desc>
-         
+
             <div>
-              <li> <strong>HTML</strong> </li>
-              <li> <strong>CSS</strong> </li>
-              <li> <strong>JavaScript</strong> </li>
-              <li> <strong>Bootstrap</strong> </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width={30} />
+                <strong>HTML</strong> </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width={30} />
+                <strong>CSS</strong> </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width={30} />
+                <strong>JavaScript</strong> </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width={30} />
+                <strong>Bootstrap</strong> </li>
             </div>
 
             <div>
-              <li> <strong>React.js</strong>  </li>
-              <li>Next.js </li>
-              <li>Three.js </li>
-              <li> Tailwind CSS </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width={30} />
+                <strong>React.js</strong>  </li>
+              {/* <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width={30} />
+                Next.js </li> */}
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" width={30} />
+                Three.js </li>
+              <li> 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width={30}/>
+           Tailwind CSS </li>
             </div>
 
 
             <div>
-              <li> MySQL </li>
-              <li> MongoDB </li>
-              <li> Power BI </li>
-              <li>JavaScript   </li>
+              <li>   
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width={30} />
+          MySQL </li>
+              <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width={30} />
+           MongoDB </li>
+              {/* <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width={30} />
+           Flutter </li> */}
+              {/* <li> 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width={30}  />
+          Java  </li> */}
             </div>
             <div>
-              <li> REST APIs </li>
-              <li> jQuery </li>
-              <li> Express </li>
-              <li> Node.js  </li>
+            
+              <li> 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" width={30}  />
+           jQuery </li>
+              <li> 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width={30} />
+          Express </li>
+              <li> 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width={30} />
+          Node.js  </li>
             </div>
 
 
@@ -202,7 +235,7 @@ const Who = () => {
 
 
           <WhatWeDo>
-           
+
             <Subtitle>Soft Skills</Subtitle>
           </WhatWeDo>
           <Desc>
@@ -213,7 +246,7 @@ const Who = () => {
               <li>  </li>
             </div>
 
-          
+
             <div>
               <li> Resiliência</li>
               <li> Proatividade </li>
@@ -240,10 +273,10 @@ const Who = () => {
 
 
 
-       
 
 
-        
+
+
         </Right>
       </Container>
     </Section>

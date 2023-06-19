@@ -69,6 +69,7 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     align-items: center;
+    
   }
 `;
 
@@ -185,35 +186,14 @@ const Right = styled.div`
   position: relative;
 
   @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 50%;
+
+    width: 100%;
   }
 `;
 
 
 
-// const Img = styled.img`
-//   width: 800px;
-//   height: 600px;
 
-//   object-fit: contain;
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   margin: auto;
-//   animation: animate 2s infinite ease alternate;
-//   @media only screen and (max-width: 768px) {
-//     width: 200px;
-//     height: 200px;
-//   }
-//   @keyframes animate {
-//     to {
-//       transform: translateY(30px);
-//     }
-//   }
-// `;
 
 const Hero = () => {
 
@@ -263,7 +243,7 @@ const Hero = () => {
 
   return (
     <Section id="hero" className="header_link">
-      <Navbar />
+  
       <Container >
         <Left >
           <Row >

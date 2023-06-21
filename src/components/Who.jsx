@@ -18,6 +18,13 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+
+    width: 50vw;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+}
 `;
 
 const Left = styled.div`
@@ -43,7 +50,7 @@ const Title = styled.h1`
     font-family: 'Source Sans Pro',sans-serif;
 
   @media only screen and (max-width: 768px) {
-    font-size: 60px;
+    font-size: 40px;
   }
 `;
 
@@ -56,6 +63,7 @@ const Right = styled.div`
   @media only screen and (max-width: 768px) {
     align-items: center;
     text-align: center;
+    font-size: 15px;
   }
 `;
 
@@ -124,6 +132,10 @@ transition: 1.5s;
   background: linear-gradient(#b6f829, #67dd0a);
   position: absolute;
   left: -2px;
+  @media only screen and (max-width: 768px) {
+   
+
+  }
 }
 `;
 
@@ -140,7 +152,12 @@ list-style: none;
 
 font-family: sans-serif;
   
-  font-family: 'Source Sans Pro',sans-serif;
+  font-family: 'Source Sans Pro',sans-serif; 
+   @media only screen and (max-width: 768px) {
+   
+   
+    font-size: 15px;
+  }
 `;
 
 

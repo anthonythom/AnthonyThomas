@@ -32,6 +32,7 @@ h1{
 
   @media only screen and (max-width: 768px) {
     font-size: 60px;
+    margin-top: 50px;
   }
 }
 

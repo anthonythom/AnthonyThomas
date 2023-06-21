@@ -27,6 +27,7 @@
     "react-is": "^18.2.0",
     "react-on-screen": "^2.1.1",
     "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.13.0",
     "react-simple-maps": "^3.0.0",
     "react-switch": "^7.0.0",
     "reactstrap": "^9.1.9",

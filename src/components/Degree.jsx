@@ -8,12 +8,15 @@ const Section = styled.div`
 
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 1000px;
+  }
 `;
 
 const Container = styled.div`
   height: 100vh;
  
-  width: 1400px;
+  width: 100vw;
 
  
   color:  #e1e1e6;
@@ -47,6 +50,7 @@ position: relative;
     padding: 60px 20px;
     gap: 40px;
 }
+
 `
 
 
@@ -58,6 +62,8 @@ font-family: 'Playfair Display SC', serif;
   @media only screen and (max-width: 768px) {
     padding: 20px;
     text-align: center;
+    margin: auto;
+    width: 30%;
   }
 
 line-height: 1.33;
@@ -80,7 +86,13 @@ const List = styled.ul`
 
 
   @media only screen and (max-width: 768px) {
-    display: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: auto;
+   width: 30%;
+   padding: 50px;
+   gap: 30px;
   }
 `;
 const ListItemFac = styled.li`
@@ -208,10 +220,27 @@ li {
 }
 
 
+@media only screen and (max-width: 768px) {
+   display: flex;
+   flex-direction: column;
 
+   margin: auto;
+   width: 30%;
+   padding: 50px;
+   gap: 30px;
+  }
 `
 const Idiomas = styled.div`  
+@media only screen and (max-width: 768px) {
+   
+  
 
+   margin: auto;
+  
+
+
+
+  }
 
 `
 
@@ -254,7 +283,7 @@ const Title = styled.h1`
     font-family: 'Source Sans Pro',sans-serif;
 
   @media only screen and (max-width: 768px) {
-    font-size: 60px;
+    font-size: 50px;
   }
 `;
 
@@ -310,7 +339,7 @@ const Button = styled.button`
     text-transform: uppercase;
     transition: all .3s ease;
 
-
+ 
   @media (min-width: 320px){
     padding: 12px 24px;
     justify-content: center;

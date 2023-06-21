@@ -9,7 +9,11 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
 
-
+  @media only screen and (max-width: 768px) {
+    margin-top: 150px;
+    width: 100%;
+    height: 20vh;
+  }
 `;
 
 const Container = styled.div`
@@ -53,7 +57,8 @@ font-size: 5rem;
     margin-bottom: 5rem;
   
   @media only screen and (max-width: 768px) {
-    font-size: 15px;
+    font-size: 50px;
+    margin-left: -00rem;
   }
 `;
 
@@ -135,7 +140,10 @@ const Button = styled.button`
 margin-left: 250px;
 width:50%;
 
-
+img{
+  width: 500px;
+  height: 500px;
+}
 h1{
   font-size: 2rem;
   
@@ -146,6 +154,16 @@ h1{
     font-family: sans-serif;
   
     font-family: 'Source Sans Pro',sans-serif;
+    @media only screen and (max-width: 768px) {
+ 
+  
+
+font-size: 25px;
+text-align: center;
+justify-content: center;
+
+
+  }
 }
 
 
@@ -174,6 +192,15 @@ h1{
     box-shadow: rgb(100 100 111 / 50%) 0 7px 29px 0;
   }
     }
+    @media only screen and (max-width: 768px) {
+   margin: auto;
+   width: 100%;
+height: 150px;
+font-size: 10px;
+
+
+
+  }
 
  `
 

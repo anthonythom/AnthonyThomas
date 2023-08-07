@@ -274,7 +274,7 @@ const Title = styled.h1`
   font-size: 5rem;
     text-transform: uppercase;
     
-   margin-left: 18rem;
+   margin-left: 15rem;
    
     font-weight: 800;
     

@@ -244,7 +244,7 @@ const Hero = () => {
 
   return (
     <Section id="hero" className="header_link">
-  
+  <Navbar/>
       <Container >
         <Left >
           <Row >

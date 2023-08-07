@@ -274,7 +274,7 @@ const Title = styled.h1`
   font-size: 5rem;
     text-transform: uppercase;
     
-   
+   margin-left: 18rem;
    
     font-weight: 800;
     
@@ -390,9 +390,9 @@ const Degree = () => {
                       <FacInstitu>Resilia Educação</FacInstitu>
                     </ListItemFac>
                     <ListItemFac>
-                      <FacTipo>Bootcamp</FacTipo>
-                      <FacCurso>Desenvolvimento Web Full-Stack</FacCurso>
-                      <FacInstitu>Alura + Oracle</FacInstitu>
+                      <FacTipo>Profissionalizante</FacTipo>
+                      <FacCurso>Desenvolvimento Java</FacCurso>
+                      <FacInstitu>Proa + Senac</FacInstitu>
                     </ListItemFac>
                   </List>
 

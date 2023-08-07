@@ -10,6 +10,7 @@ import Footer from "./components/Footer"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const Container = styled.div`
 height: 100vh;
 
@@ -42,6 +43,7 @@ function App() {
   return (
     <Container>
       <Navbar />
+ 
       <Hero id="/hero" />
       <Degree id="degree" />
       <Who id="who" />

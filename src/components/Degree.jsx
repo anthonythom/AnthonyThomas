@@ -356,7 +356,14 @@ const Button = styled.button`
     padding: 12px 24px;
     justify-content: center;
 }
+@media (max-width: 768px) {
 
+display: none;
+  
+ 
+  
+   
+  }
 :hover {
     color: white;
     background-color:#a984f8; ;

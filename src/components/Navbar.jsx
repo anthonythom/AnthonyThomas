@@ -10,6 +10,17 @@ const Section = styled.div`
 
   margin-top: 50px;
 
+  @media (max-width: 768px) {
+
+display: flex;
+align-items: center;
+ flex-direction: column;
+
+ 
+  
+   
+  }
+
 `;
 
 const Container = styled.div`
@@ -31,9 +42,19 @@ margin-left: 25%;
     #b7e69c 90deg,
     #b7e69c 1.9turn
   );
- 
-
   box-shadow: 0 4px 4px 2px rgba(113, 113, 115, 0.5);
+
+  @media (max-width: 768px) {
+
+display: flex;
+
+
+  
+ 
+  
+   
+  }
+
 `;
 
 const Links = styled.div`
@@ -56,12 +77,12 @@ const Links = styled.div`
   font-family: "Source Sans Pro", sans-serif;
 
   @media (max-width: 768px) {
-    margin: auto;
 
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 195px;
+display: none;
+  
+ 
+  
+   
   }
 `;
 

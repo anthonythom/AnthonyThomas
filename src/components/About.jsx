@@ -7,6 +7,15 @@ const Section = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
+  @media (max-width: 768px) {
+
+    
+
+    height: 4000px;
+    width: 100%;
+
+
+}
 `;
 
 const Container = styled.div`
@@ -19,6 +28,7 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+
   }
 `;
 const AboutMe = styled.div`
@@ -31,9 +41,30 @@ const AboutMe = styled.div`
 
 const Left = styled.div`
   width: 25%;
+  @media (max-width: 768px) {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+    width: 100%;
+   margin: 20px 25px 20px 60px  ;
+ 
+  
+   
+}
 `;
 const Right = styled.div`
   width: 50%;
+  @media (max-width: 768px) {
+
+    
+
+height: 4000px;
+width: 100%;
+
+
+}
 `;
 
 const Title = styled.h1`
@@ -79,6 +110,14 @@ const PhotoImage = styled.img`
   ${PhotoContainer}:hover & {
     transform: scale(1.1);
   }
+  @media (max-width: 768px) {
+
+
+width: 300px;
+
+
+
+}
 `;
 
 const PhotoOverlay = styled.div`
@@ -122,6 +161,16 @@ const DescSobre = styled.p`
   text-align: center;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
+
+
+  @media (max-width: 768px) {
+
+width: 90%;
+
+text-align: left;
+margin-left: 30px;
+
+}
 `;
 
 const Skills = styled.div`

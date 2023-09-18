@@ -38,7 +38,7 @@ function App() {
     <Container>
       <Hero id="/hero" />
       <About id="about" />
-      
+      {/* <Degree id="formacao" /> */}
       <Works id="works" />
       <Contact id="contact" />
       <Footer />

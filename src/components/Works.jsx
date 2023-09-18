@@ -32,7 +32,7 @@ flex-direction: column;
 `;
 
 const Title = styled.h1`
-font-size: 5rem;
+font-size: 3rem;
     text-transform: uppercase;
  
 

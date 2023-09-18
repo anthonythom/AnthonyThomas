@@ -47,7 +47,7 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
-
+gap: 50px;
   color:  #e1e1e6;
 
 
@@ -103,16 +103,17 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #ad93e5;
+  color: #e5de93;
   text-align: justify;
-  
+
 `;
 
 const Desc = styled.p`
   font-size: 24px;
 
 
-font-family: 'Playfair Display SC', serif;
+ font-family: 'Source Sans Pro',sans-serif;
+ text-align: justify;
   @media only screen and (max-width: 768px) {
     padding: 20px;
     text-align: center;
@@ -129,10 +130,10 @@ const Button = styled.button`
     text-align: center;
     border: 1px;
     border-style: solid;
-    border-radius: 5px;
-    border-color:#6231cd ;
+    border-radius: 50px;
+    border-color:#a984f8; 
     color:  #e1e1e6;
-    background: var(--background);
+    background: #a984f8; 
     text-transform: uppercase;
     transition: all .3s ease;
  
@@ -144,7 +145,7 @@ const Button = styled.button`
 
 :hover {
     color: white;
-    background-color: #6231cd  ;
+    background-color:#a984f8; ;
     box-shadow: rgb(100 100 111 / 50%) 0 7px 29px 0;
   }
   
@@ -160,11 +161,11 @@ justify-content: space-between;
 
 const DivL = styled.a`
 
-color: #6231cd;
+color: #e5de93;
 
 
 a:visited {
-  color: #6231cd ;
+  color:#e5de93;
   text-decoration: none;
   list-style: none;
 }
@@ -186,6 +187,7 @@ const Right = styled.div`
   flex: 3;
   position: relative;
 
+  
   @media only screen and (max-width: 768px) {
 
     width: 100%;
@@ -313,7 +315,7 @@ const Hero = () => {
               <directionalLight position={[6, 4, 5]} />
               <Sphere args={[0.7, 100, 100]} scale={2.0}>
                 <MeshDistortMaterial
-                  color="#5f2eca"
+                  color="#a984f8"
                   attach="material"
                   distort={0.8}
                   speed={2.}

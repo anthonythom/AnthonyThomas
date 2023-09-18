@@ -69,7 +69,7 @@ font-family: 'Playfair Display SC', serif;
 line-height: 1.33;
 max-width: 100ch;
 margin-bottom: 60px;
-color: #a3a3a3;
+color:  #e1e1e6;
 `
 
 
@@ -98,7 +98,12 @@ const List = styled.ul`
 const ListItemFac = styled.li`
 
 flex: 1;
-  background: #000000;
+background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
   padding: 20px;
   border-radius: 4px;
   display: flex;
@@ -106,7 +111,7 @@ flex: 1;
 
 position: relative;
 display: block;
-transition: 1.5s;
+transition: 0.1s;
 
 ::after{
  
@@ -116,17 +121,23 @@ transition: 1.5s;
  height: 100%;
  top: 100%;
  left: 0;
- transition: transform 1.5s;
- transform: scaleX(1);
+ transition: transform 0.1s;
+ transform: scaleX(5);
  transform-origin: left;
 }
 
 :hover{
- color: #6231cd;
- transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+ color: #e5de93;
+ transition: transform 0.1s;
+ background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 17, 17, 17, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 16, 16, 16, 0.35 );
 }
 :hover::after{
-  transform: scaleX(15);
+  transform: scaleX(26);
   transform-origin: left;
  
 }
@@ -155,9 +166,10 @@ transition: 1.5s;
 
 
 const FacTipo = styled.h1`  
-font-size: 0.875rem;
+font-size: 1rem;
 text-transform: uppercase;
-color: #a3a3a3;
+font-weight: bold;
+color: #ffffff;
 margin-bottom: 10px;`
 
 const FacCurso = styled.h1`  
@@ -172,20 +184,20 @@ const FacCurso = styled.h1`
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#b6f829, #67dd0a);
+  background: linear-gradient(#e5de93, #ddcb0a);
   position: absolute;
   left: -24px;
 }
   `
 const FacInstitu = styled.span`  
   font-size: 1.125rem;
-  color: #a3a3a3;`
+  color: #ffffff;`
 
 
 const FormacaoExtra = styled.h3`  
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #8f8f8f;
+  color:  #e1e1e6;
   text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
@@ -271,7 +283,7 @@ const Span = styled.h6`
 
 const Title = styled.h1`
   
-  font-size: 5rem;
+  font-size: 3rem;
     text-transform: uppercase;
     
    margin-left: 15rem;
@@ -324,7 +336,7 @@ font-family: sans-serif;
 const Button = styled.button`
  margin-left: 70rem;
  margin-bottom: 20px;
-  height: 50px;
+ height: 50px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 700;
@@ -332,31 +344,30 @@ const Button = styled.button`
     text-align: center;
     border: 1px;
     border-style: solid;
-    border-radius: 5px;
-    border-color:#6231cd ;
+    border-radius: 50px;
+    border-color:#a984f8; 
     color:  #e1e1e6;
-    background: var(--background);
+    background: #a984f8; 
     text-transform: uppercase;
     transition: all .3s ease;
-
  
+
   @media (min-width: 320px){
     padding: 12px 24px;
     justify-content: center;
 }
 
-  
-    :hover {
+:hover {
     color: white;
-    background-color: #6231cd  ;
+    background-color:#a984f8; ;
     box-shadow: rgb(100 100 111 / 50%) 0 7px 29px 0;
   }
-
+  
 `;
 
 const Degree = () => {
   return (
-    <Section id="degree" className="header_link">
+    <Section id="formacao" className="header_link">
       <Container>
 
         <Right>
@@ -369,7 +380,10 @@ const Degree = () => {
 
                 <div>
                   <FormacaoTexto>
-                    Minha mais recente experiência acadêmica foi o curso de <strong>Web Desenvolvimento</strong> 🎓 que fiz na instituição de ensino <strong>Alura</strong> em parceria com a <strong>Oracle</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
+                    Minha mais recente experiência acadêmica é o curso de <strong>Desenvolvimento Java</strong> 
+                    🎓 que estou cursando atualmente no instituto de ensino <strong>Proa</strong> em parceria com o <strong>Senac
+                      </strong>. Além disso, me mantenho sempre atualizado com cursos intensivos online.
+
                   </FormacaoTexto>
 
                   <a href="./AnthonyThomasCV.pdf" download>
@@ -393,6 +407,11 @@ const Degree = () => {
                       <FacTipo>Profissionalizante</FacTipo>
                       <FacCurso>Desenvolvimento Java</FacCurso>
                       <FacInstitu>Proa + Senac</FacInstitu>
+                    </ListItemFac>
+                    <ListItemFac>
+                      <FacTipo>Bootcamp</FacTipo>
+                      <FacCurso>AWS Fundamentos</FacCurso>
+                      <FacInstitu>Escola da Nuvem</FacInstitu>
                     </ListItemFac>
                   </List>
 

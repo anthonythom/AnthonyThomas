@@ -9,16 +9,18 @@ const Section = styled.div`
     width: 100%;
     margin-top: 40vh;
     text-align: center;
-    
   }
 `;
 
 const Container = styled.div`
   width: 100%;
   padding: 3rem 0;
-  background-color: #000000;
-
-
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(17, 17, 17, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid rgba(16, 16, 16, 0.35);
 `;
 const Div = styled.div`
   display: flex;
@@ -26,9 +28,21 @@ const Div = styled.div`
   justify-content: space-between;
 
   margin-bottom: 30px;
-
 `;
 const Left = styled.p`
+
+h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Source Sans Pro", sans-serif;
+}
+p{
+  font-size:0.9rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Source Sans Pro", sans-serif;
+}
   margin-left: 10vh;
 
   font-size: 1rem;
@@ -39,12 +53,18 @@ const Left = styled.p`
   font-family: "Playfair Display SC", serif;
   @media only screen and (max-width: 768px) {
     width: 100%;
-
-    
   }
 `;
 
 const Right = styled.div`
+
+
+h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Source Sans Pro", sans-serif;
+}
   font-size: 1rem;
   letter-spacing: 3px;
 
@@ -68,23 +88,20 @@ const Right = styled.div`
   }
   @media only screen and (max-width: 768px) {
     width: 100%;
-
-    
   }
 `;
 
 const DivL = styled.a`
-  color: #6231cd;
+  color: #ebf884;
 
   a:visited {
-    color: #6231cd;
+    color: #ebf884;
     text-decoration: none;
     list-style: none;
   }
   a:hover {
     color: #ffffff;
   }
-  
 `;
 
 const DivF = styled.div`
@@ -112,12 +129,10 @@ const Footer = () => {
           <Left>
             <h1> Anthony Thomas </h1>
             <p>
-              Um desenvolvedor Web focado em front-end, construindo o front-end
-              <br />
-              de sites e aplicativos que levam ao sucesso do produto geral.{" "}
-              <br />
+              Um desenvolvedor Web FullStack, focado em construir sites <br /> e aplicativos que
+              levam ao sucesso do produto geral. <br />
               Estou disponível para novos projetos no momento. <br />
-              Entre em contato comigo e marcamos uma conversa 👋
+              Entre em contato comigo para marcamos um bate-papo
             </p>
           </Left>
 

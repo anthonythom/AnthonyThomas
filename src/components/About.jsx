@@ -8,14 +8,9 @@ const Section = styled.div`
   text-align: center;
   align-items: center;
   @media (max-width: 768px) {
-
-    
-
-    height: 4000px;
+    height: 2600px;
     width: 100%;
-
-
-}
+  }
 `;
 
 const Container = styled.div`
@@ -27,8 +22,8 @@ const Container = styled.div`
   justify-content: space-evenly;
 
   @media (max-width: 768px) {
+    display: flex;
     flex-direction: column;
-
   }
 `;
 const AboutMe = styled.div`
@@ -42,29 +37,18 @@ const AboutMe = styled.div`
 const Left = styled.div`
   width: 25%;
   @media (max-width: 768px) {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
 
-    width: 100%;
-   margin: 20px 25px 20px 60px  ;
- 
-  
-   
-}
+
+    width: 90%;
+    margin: 20px 25px 20px 60px;
+  }
 `;
 const Right = styled.div`
   width: 50%;
   @media (max-width: 768px) {
-
-    
-
-height: 4000px;
-width: 100%;
-
-
-}
+   
+    width: 100%;
+  }
 `;
 
 const Title = styled.h1`
@@ -95,9 +79,15 @@ const Title2 = styled.h1`
 const PhotoContainer = styled.div`
   position: relative;
   margin: 10px;
-  overflow: hidden;
+
   cursor: pointer;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+height: 350px;
+     
+    
 `;
 
 const PhotoImage = styled.img`
@@ -107,17 +97,19 @@ const PhotoImage = styled.img`
   object-fit: cover;
   transition: transform 0.3s ease;
 
+      box-shadow: 0 8px 32px 0 rgba(17, 17, 17, 0.37);
+      backdrop-filter: blur(4.5px);
+      -webkit-backdrop-filter: blur(13.5px);
+     
+   
+
   ${PhotoContainer}:hover & {
     transform: scale(1.1);
+    
   }
   @media (max-width: 768px) {
-
-
-width: 300px;
-
-
-
-}
+    width: 300px;
+  }
 `;
 
 const PhotoOverlay = styled.div`
@@ -143,6 +135,7 @@ const PhotoName = styled.span`
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000000;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
   font-weight: bold;
   opacity: ${(props) => (props.show ? 1 : 0)};
@@ -155,6 +148,12 @@ const Desc = styled.h1`
   text-align: center;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
+  @media (max-width: 768px) {
+    width: 90%;
+
+    text-align: left;
+    margin-left: 30px;
+  }
 `;
 const DescSobre = styled.p`
   margin-top: 10px;
@@ -162,15 +161,12 @@ const DescSobre = styled.p`
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
 
-
   @media (max-width: 768px) {
+    width: 90%;
 
-width: 90%;
-
-text-align: left;
-margin-left: 30px;
-
-}
+    text-align: left;
+    margin-left: 30px;
+  }
 `;
 
 const Skills = styled.div`
@@ -185,9 +181,8 @@ const SkillStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-
-.skills__skill2{
-  padding: 1rem 2rem;
+  .skills__skill2 {
+    padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1rem;
@@ -237,10 +232,8 @@ const SkillStyle = styled.div`
     color: #ffffff;
   }
 
-
-
-.skills__skill1{
-  padding: 1rem 2rem;
+  .skills__skill1 {
+    padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1rem;
@@ -290,9 +283,6 @@ const SkillStyle = styled.div`
     color: #ffffff;
   }
 
-
-
-
   .skills__skill {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
@@ -339,7 +329,7 @@ const SkillStyle = styled.div`
       transform: scaleX(26);
       transform-origin: left;
     }
-    
+
     border-radius: 5px;
     font-weight: 600;
     color: #ffffff;
@@ -435,7 +425,7 @@ const About = () => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <PhotoImage src="./img/fotoperfil.jpg" />
+            <PhotoImage src="./img/fotoperfil2.jpg" />
             <PhotoName show={showName}> @anthonythomas.jpg </PhotoName>
             <PhotoOverlay> </PhotoOverlay>
           </PhotoContainer>
@@ -443,12 +433,13 @@ const About = () => {
             <p>
               Olá! Meu nome é Anthony Thomas, tenho 22 anos e sou um entusiasta
               da tecnologia. Atualmente, estou cursando Análise e
-              Desenvolvimento de Sistemas e Desenvolvimento Java, buscando aprimorar meus conhecimentos
-              e habilidades nessa área em constante evolução.
+              Desenvolvimento de Sistemas e Desenvolvimento Java, buscando
+              aprimorar meus conhecimentos e habilidades nessa área em constante
+              evolução.
             </p>
             <p>
-              Tive a oportunidade de me formar em Desenvolvimento Web FullStack pela
-              Resilia Educação, o que me proporcionou uma base sólida e
+              Tive a oportunidade de me formar em Desenvolvimento Web FullStack
+              pela Resilia Educação, o que me proporcionou uma base sólida e
               conhecimentos práticos nessa área. Durante esse percurso, descobri
               minha verdadeira paixão por explorar soluções tecnológicas e criar
               experiências digitais inovadoras.
@@ -472,17 +463,17 @@ const About = () => {
             <h3 class="about__content-title">Hard Skills</h3>
             <SkillStyle class="skills">
               <div class="skills__skill1">HTML</div>
-              <div class="skills__skill">CSS</div>
+              <div class="skills__skill" >CSS</div>
               <div class="skills__skill2">JavaScript</div>
               <div class="skills__skill1">React</div>
-              <div class="skills__skill">Three.js</div>
+              <div class="skills__skill" >Three.js</div>
               <div class="skills__skill2">GIT</div>
-              <div class="skills__skill">Github</div>
+              <div class="skills__skill" >Github</div>
               <div class="skills__skill1">MySQL</div>
               <div class="skills__skill2">MongoDB</div>
               <div class="skills__skill1">SEO</div>
               <div class="skills__skill2">Java</div>
-              <div class="skills__skill">Express</div>
+              <div class="skills__skill" >Express</div>
               <div class="skills__skill1">Node</div>
             </SkillStyle>
           </Skills>

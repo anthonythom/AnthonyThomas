@@ -5,11 +5,6 @@ const Section = styled.div`
   display: block;
   margin-top: 20vh;
   color: #fff;
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    margin-top: 40vh;
-    text-align: center;
-  }
 `;
 
 const Container = styled.div`
@@ -21,63 +16,75 @@ const Container = styled.div`
   -webkit-backdrop-filter: blur(13.5px);
   border-radius: 10px 10px 0px 0px;
   border: 1px solid rgba(16, 16, 16, 0.35);
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin-top: 50vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 const Div = styled.div`
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-
   margin-bottom: 30px;
+  margin: 50px 50px 50px 50px;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 const Left = styled.p`
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Source Sans Pro", sans-serif;
 
-h1{
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-family: "Source Sans Pro", sans-serif;
-}
-p{
-  font-size:0.9rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-family: "Source Sans Pro", sans-serif;
-}
-  margin-left: 10vh;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      font-size: 3rem;
+    }
+  }
+  p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Source Sans Pro", sans-serif;
+
+    @media only screen and (max-width: 768px) {
+    }
+  }
 
   font-size: 1rem;
   letter-spacing: 3px;
-
   color: #ffffff;
-
   font-family: "Playfair Display SC", serif;
   @media only screen and (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 
 const Right = styled.div`
-
-
-h1{
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-family: "Source Sans Pro", sans-serif;
-}
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Source Sans Pro", sans-serif;
+  }
   font-size: 1rem;
   letter-spacing: 3px;
-
   color: #ffffff;
-
   text-decoration: none;
-
   font-family: "Playfair Display SC", serif;
-
-  margin-right: 10vh;
   display: flex;
   flex-direction: column;
-
   display: flex;
   justify-content: space-between;
 
@@ -87,7 +94,7 @@ h1{
     list-style: none;
   }
   @media only screen and (max-width: 768px) {
-    width: 100%;
+    display: flex;
   }
 `;
 
@@ -129,8 +136,8 @@ const Footer = () => {
           <Left>
             <h1> Anthony Thomas </h1>
             <p>
-              Um desenvolvedor Web FullStack, focado em construir sites <br /> e aplicativos que
-              levam ao sucesso do produto geral. <br />
+              Um desenvolvedor Web FullStack, focado em construir sites <br /> e
+              aplicativos que levam ao sucesso do produto geral. <br />
               Estou disponível para novos projetos no momento. <br />
               Entre em contato comigo para marcamos um bate-papo
             </p>

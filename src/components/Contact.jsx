@@ -12,7 +12,6 @@ const Container = styled.div`
   width: 100%;
   height: 87%;
   display: flex;
-
   justify-content: space-between;
   gap: 50px;
 `;
@@ -23,7 +22,7 @@ const Left = styled.div`
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(13.5px);
   border-radius: 10px 10px 0px 0px;
-  border: 1px solid rgba(16, 16, 16, 0.35);
+
   display: flex;
   justify-content: center;
   width: 37%;
@@ -31,10 +30,14 @@ const Left = styled.div`
   border-radius: 5px;
   margin: 5rem auto 0 auto;
 
+
   @media (max-width: 768px) {
     width: 100%;
     height: 150%;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -53,6 +56,10 @@ const Line = styled.img`
   align-items: center;
   justify-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    margin-left: 8.5rem;
+  }
 `;
 
 const Desc = styled.p`
@@ -64,7 +71,7 @@ color: white;
 const Form = styled.form`
   width: 500px;
   display: flex;
-  
+
   flex-direction: column;
   gap: 25px;
   @media only screen and (max-width: 768px) {
@@ -74,10 +81,12 @@ const Form = styled.form`
 
 const Input = styled.input`
   padding: 20px;
-  background-color: #cbb3fe52;
+  background-color: #fdfcff52;
   border: none;
   border-radius: 5px;
   color: #fcfcfc;
+ 
+  
 `;
 
 const TextArea = styled.textarea`
@@ -85,7 +94,7 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 5px;
    color: #fcfcfc ;
-  background-color: #cbb3fe52;
+  background-color: #fdfcff52;
 `;
 
 const Button = styled.button`
@@ -155,8 +164,8 @@ const Contact = () => {
               Sinta-se à vontade para entrar em contato comigo enviando o
               formulário abaixo e retornarei o mais breve possível.
             </Desc>
-            <Input placeholder="Nome" name="name" />
-            <Input placeholder="Email" name="email" />
+            <Input  placeholder="Nome" name="name"  />
+            <Input type="email" placeholder="Email" name="email" />
             <TextArea
               placeholder="Escreva sua mensagem:"
               name="message"

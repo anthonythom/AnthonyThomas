@@ -52,7 +52,7 @@ gap: 50px;
 
 
   @media only screen and (max-width: 768px) {
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -161,11 +161,11 @@ justify-content: space-between;
 
 const DivL = styled.a`
 
-color: #e5de93;
+color:#a984f8; 
 
 
 a:visited {
-  color:#e5de93;
+  color:#a984f8; 
   text-decoration: none;
   list-style: none;
 }
@@ -268,6 +268,7 @@ const Hero = () => {
             <Subtitle>Desenvolvedor FullStack</Subtitle>
           </WhatWeDo>
           <Desc>
+
             Desenvolvedor Full Stack Júnior apaixonado por interfaces interativas.
             Os projetos incluem criação e consumo de APIs, Javascript, Node.js, React, consultas a bancos de dados e muito mais.
 
